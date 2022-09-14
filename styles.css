@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter&family=Open+Sans:wght@500&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    overscroll-behavior: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #FCF4D7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(135, 134, 134);
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 30px 10px;
+    padding-left: 20px;
+}
+
+nav h3 {
+    cursor: pointer;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 7px;
+    padding: 1px 5px;
+    transition: .2s;
+    margin-left: 20px;
+    letter-spacing: 0.1rem;
+}
+
+nav h3:hover {
+    color: rgb(248, 245, 223);
+    background-color: rgb(162, 66, 11);
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 50px;
+}
+
+.nav-li {
+    display: inline-block;
+    transition: all .2s;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 7px;
+    padding: 3px 5px;
+}
+
+.nav-li:hover {
+    transform: scale(1.1);
+}
+
+.nav-li:hover .nav-link {
+    color: rgb(248, 245, 223);
+    background-color: rgb(162, 66, 11);
+}
+
+/* Body and Sections */
+
+/* Home Section */
+.greeting {
+    position: absolute;
+    top: 13%;
+    right: 18%;
+}
+
+.greet1 {
+    font-size: 33px;
+    color: rgb(162, 66, 11);
+}
+
+.greet2 {
+    font-size: 28px;
+}
+
+.greet3 {
+    font-size: 50px;
+    font-weight:bolder;
+    position: relative;
+    top: 36px;
+    left: 5px;
+}
+
+
+.home {
+    background-image: url('Images/snow.png');
+    filter: brightness(1.15);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hr1 {
+    margin-top: 10px;
+    background-color: black;
+    border: none;
+    height: 2px;
+    width: 80%;
+    
+}
+
+.quote {
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.quotes-img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.quote-img-start {
+    right: 10px;
+    bottom: 10px;
+}
+
+.quote-img-end {
+    left: 10px;
+    top: 17px;
+}
+
+.quote-text {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 19px;
+}
+
+
+.scroll {
+    position: relative;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    transition: all 400ms;
+    font-weight: bolder;
+}
+
+
+.scroll:hover {
+    transform: scale(1.1);
+}
+
+
+/* About section */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF4D7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    line-height: 2rem;
+}
+
+.about-text-wrapper {
+    max-width: 50%;
+}
+
+.about-wrapper {
+    width: 80%;
+    height: 60vh;
+}
+
+.img-bricks {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('Images/brick.jpg');
+    background-repeat: space;
+    background-size: 50px 50px;
+    height: 50px;
+} 
+
+.list {
+    list-style-type: circle;
+}
+
+.list-group {
+    position: relative;
+    left: 2rem;
+}
+
+.pipe {
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    width: 80px;
+    height: 120px;
+}
+
+
+
