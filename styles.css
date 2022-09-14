@@ -35,6 +35,21 @@ body {
     height: 20px;
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 1px 5px;
+    transition: .2s;
+}
+
+.logo-icon {
+    margin-right: 4px;
+    width: 18px;
+    height: 18px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -48,21 +63,21 @@ nav {
     padding-left: 20px;
 }
 
+#logo:hover {
+    color: rgb(248, 245, 223);
+    background-color: rgb(162, 66, 11);
+    transform: scale(1.1);
+}
+
+#logo:hover .logo-icon {
+    fill: white;
+}
+
 nav h3 {
     cursor: pointer;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    border-radius: 7px;
-    padding: 1px 5px;
-    transition: .2s;
-    margin-left: 20px;
     letter-spacing: 0.1rem;
-}
-
-nav h3:hover {
-    color: rgb(248, 245, 223);
-    background-color: rgb(162, 66, 11);
-    transform: scale(1.1);
 }
 
 nav ul {
@@ -199,9 +214,11 @@ nav ul {
 }
 
 
-/* About section */
+/* Carousell section */
 
-.about {
+/* Carousell and section Related Images */
+
+.carousell {
     width: 100%;
     height: 100vh;
     background-color: #FCF4D7;
@@ -213,21 +230,45 @@ nav ul {
     justify-content: center;
 }
 
-.about-text {
+.carousell-div {
+    width: 80%;
+    height: 50vh;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.car-header {
+    letter-spacing: 0.2rem;
+}
+
+.car-text {
     line-height: 2rem;
     text-align: justify;
 }
 
-.about-text-wrapper {
+.car-text-wrapper {
     max-width: 50%;
+    position: relative;
 }
 
-.about-wrapper {
-    width: 80%;
-    height: 60vh;
+.car-elem-wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10%;
+}
+
+.f-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 30%;
+    bottom: 37vh;
+    cursor: pointer;
 }
 
 .img-bricks {
@@ -240,22 +281,19 @@ nav ul {
     height: 50px;
 } 
 
-.list {
-    list-style-type: circle;
-}
-
-.list-group {
-    position: relative;
-    left: 2.5rem;
-}
-
 .pipe {
     position: absolute;
-    right: 10%;
+    right: 28%;
     bottom: 50px;
     width: 80px;
     height: 120px;
 }
+
+
+
+
+
+
 
 
 
