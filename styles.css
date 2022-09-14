@@ -156,6 +156,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
 }
 
 .hr1 {
@@ -173,6 +174,7 @@ nav ul {
     left: 15%;
     display: flex;
     flex-direction: row;
+    transition: 0.4s;
 }
 
 .quotes-img {
@@ -193,7 +195,15 @@ nav ul {
 
 .quote-text {
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 19px;
+    font-size: 19px; 
+}
+
+.quote:hover .quote-text{
+    color: rgb(162, 66, 11);
+}
+
+.quote:hover {
+    transform: scale(1.1);
 }
 
 
@@ -213,6 +223,28 @@ nav ul {
     transform: scale(1.1);
 }
 
+
+.custom-shape-divider-bottom-1663170109 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663170109 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1663170109 .shape-fill {
+    fill: #FCF4D7;
+    filter: brightness(0.86956521739);
+}
 
 /* Carousell section */
 
@@ -267,7 +299,7 @@ nav ul {
     border: none;
     position: absolute;
     right: 30%;
-    bottom: 37vh;
+    bottom: 35vh;
     cursor: pointer;
 }
 
@@ -290,7 +322,11 @@ nav ul {
 }
 
 
-
+/* Interests */
+#proj-link {
+    text-decoration: none;
+    color: rgb(162, 66, 11);
+}
 
 
 
