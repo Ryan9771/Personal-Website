@@ -29,6 +29,12 @@ body {
 
 /* Navbar */
 
+.icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -68,26 +74,35 @@ nav ul {
 }
 
 .nav-li {
-    display: inline-block;
+    display: flex;
     transition: all .2s;
+    border-radius: 7px;
+    padding: 3px 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link {
     font-weight: bold;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    border-radius: 7px;
-    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-li:hover {
     transform: scale(1.1);
+    background-color: rgb(162, 66, 11);
 }
 
 .nav-li:hover .nav-link {
-    color: rgb(248, 245, 223);
-    background-color: rgb(162, 66, 11);
+    color: rgb(248, 245, 223); 
 }
+
+.nav-li:hover .icon {
+    fill: white;
+}
+
 
 /* Body and Sections */
 
@@ -200,6 +215,7 @@ nav ul {
 
 .about-text {
     line-height: 2rem;
+    text-align: justify;
 }
 
 .about-text-wrapper {
@@ -209,6 +225,9 @@ nav ul {
 .about-wrapper {
     width: 80%;
     height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-bricks {
@@ -227,7 +246,7 @@ nav ul {
 
 .list-group {
     position: relative;
-    left: 2rem;
+    left: 2.5rem;
 }
 
 .pipe {
