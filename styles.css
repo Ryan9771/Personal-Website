@@ -275,6 +275,15 @@ nav ul {
     letter-spacing: 0.2rem;
 }
 
+.car-hr {
+    width: 80%;
+    background-color: gray;
+    height: 2px;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+}
+
 .car-text {
     line-height: 2rem;
     text-align: justify;
@@ -330,6 +339,40 @@ nav ul {
     color: rgb(162, 66, 11);
 }
 
+
+/* Contact */
+.contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.resume-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    margin-top: 23px;
+}
+
+.resume-hr {
+    border: none;
+    background-color: black;
+    width: 13%;
+    height: 1px;
+    margin-top: 22px;
+}
+
+.resume-text {
+    font-size: 16px;
+    color: gray;
+}
 
 /* Projects */
 
