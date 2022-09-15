@@ -224,7 +224,7 @@ nav ul {
 }
 
 
-.custom-shape-divider-bottom-1663212489 {
+.custom-shape-divider-bottom-1663213249 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -234,17 +234,16 @@ nav ul {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1663212489 svg {
+.custom-shape-divider-bottom-1663213249 svg {
     position: relative;
     display: block;
-    width: calc(145% + 1.3px);
-    height: 47px;
+    width: calc(108% + 1.3px);
+    height: 70px;
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1663212489 .shape-fill {
-    /* fill: #D9D8D1; */
-    fill: #D9D8D1;
+.custom-shape-divider-bottom-1663213249 .shape-fill {
+    fill: #FCF4D7;
     filter: brightness(0.86956521739);
 }
 
@@ -255,7 +254,8 @@ nav ul {
 .carousell {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(#d9d8d1, #FCF4D7);
+    /* background-image: linear-gradient(#d9d8d1, #FCF4D7); */
+    background-color: #FCF4D7;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
