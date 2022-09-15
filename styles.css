@@ -224,7 +224,7 @@ nav ul {
 }
 
 
-.custom-shape-divider-bottom-1663170109 {
+.custom-shape-divider-bottom-1663212489 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -234,15 +234,17 @@ nav ul {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1663170109 svg {
+.custom-shape-divider-bottom-1663212489 svg {
     position: relative;
     display: block;
-    width: calc(109% + 1.3px);
-    height: 150px;
+    width: calc(145% + 1.3px);
+    height: 47px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1663170109 .shape-fill {
-    fill: #FCF4D7;
+.custom-shape-divider-bottom-1663212489 .shape-fill {
+    /* fill: #D9D8D1; */
+    fill: #D9D8D1;
     filter: brightness(0.86956521739);
 }
 
@@ -253,7 +255,7 @@ nav ul {
 .carousell {
     width: 100%;
     height: 100vh;
-    background-color: #FCF4D7;
+    background-image: linear-gradient(#d9d8d1, #FCF4D7);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -329,7 +331,14 @@ nav ul {
 }
 
 
+/* Projects */
 
+.projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF4D7;
+    position: relative;
+}
 
 
 
