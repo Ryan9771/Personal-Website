@@ -9,7 +9,7 @@
 - Some decoration in the middle page to make it not look so plain
 
 ## Animations to Add
-- Something coming out of the pipe
+- Something coming out of the pipe (bubbles?)
 - Hover on icons
 - Maybe something that moves when you move the cursor
 - Maybe the things that move around the box for the middle page
