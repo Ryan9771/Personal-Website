@@ -286,6 +286,7 @@ nav ul {
 .car-text {
     line-height: 2rem;
     text-align: justify;
+    padding-right: 20px;
 }
 
 .car-text-wrapper {
@@ -326,7 +327,7 @@ nav ul {
 
 .pipe {
     position: absolute;
-    right: 28%;
+    right: 7%;
     bottom: 50px;
     width: 80px;
     height: 120px;
@@ -376,6 +377,15 @@ nav ul {
 
 /* Projects */
 
+/* Carousell Navbar */
+
+.projects-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6vh;
+}
+
 .projects {
     width: 100%;
     height: 100vh;
@@ -386,22 +396,93 @@ nav ul {
 }
 
 .project-list {
-    width: 150px;
+    width: 220px;
     height: 50vh;
-    background-color: gray;
     position: relative;
-    left: 13%;
-    bottom: 3%;
+    left: 11%;
+    bottom: 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: scroll;
+    padding-right: 20px;
 }
 
 .project-label {
     width: 100%;
-    height: 65px;
-    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 1.9rem;
+    text-align: justify;
 }
+
+.project-title {
+    margin-bottom: 8px;
+}
+
+/* The carousell of projects */
+.projects-carousell {
+    position: relative;
+    left: 15%;
+    top: -4%;
+    width: 50vw;
+    height: 70vh;
+
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.git-link {
+    background-color: #50C878;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.git-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.proj-heading {
+    margin-bottom: 20px;
+}
+
+.proj-content {
+    line-height: 2rem;
+    width: 90%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image Styles */
+
+#discord1 {
+    object-fit: cover;
+    width: 300px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#discord2 {
+    object-fit: cover;
+    width: 300px;
+    border-radius: 10px;
+}
+
 
 
