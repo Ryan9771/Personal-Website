@@ -3,11 +3,11 @@
     - Imperial
     - Intern
     - Tutoring
-- Projects Page
 
 ## Decorations to add
 - Some decoration in the middle page to make it not look so plain
 - Add the navbar effect to set active on the tabs when scrolled
+- Carousell on discord 'other' images
 
 ## Animations to Add
 - Something coming out of the pipe (bubbles?)
