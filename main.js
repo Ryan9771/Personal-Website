@@ -1,3 +1,5 @@
+/* About-carousell handler */
+
 const divs = document.querySelectorAll(".car-elem-wrapper");
 const btn = document.querySelector(".f-btn");
 
@@ -24,4 +26,9 @@ btn.addEventListener('click', () => {
     }
 })
 
+/* Project Buttons Handler */
 
+const projTitle = document.querySelector('[car-num="0"]');
+projTitle.addEventListener("click", () => {
+    // Something here
+})
