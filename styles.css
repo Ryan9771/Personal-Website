@@ -64,9 +64,12 @@ nav {
 }
 
 #logo:hover {
-    color: rgb(248, 245, 223);
     background-color: rgb(162, 66, 11);
     transform: scale(1.1);
+}
+
+#logo:hover .logo-text {
+    color: white;
 }
 
 #logo:hover .logo-icon {
@@ -143,7 +146,14 @@ nav ul {
     position: relative;
     top: 40px;
     left: 20px;
+    transition: all 100ms;
 }
+
+.greet3:hover {
+    color: rgb(162, 66, 11);
+}
+
+
 
 
 .home {
@@ -214,13 +224,21 @@ nav ul {
     flex-direction: column;
     align-items: center;
     font-size: 20px;
-    transition: all 400ms;
+    transition: all 200ms;
     font-weight: bolder;
 }
 
 
 .scroll:hover {
     transform: scale(1.1);
+}
+
+.scroll:hover .scroll-text {
+    color: rgb(162, 66, 11);
+}
+
+.scroll:hover .hr1 {
+    background-color: rgb(162, 66, 11);
 }
 
 
@@ -316,6 +334,37 @@ nav ul {
     cursor: pointer;
 }
 
+/* Animation / Background */
+
+
+#ball {
+    position: absolute;
+    right: 7.63%;
+    bottom: 150px;
+    width: 60px;
+    height: 60px;
+    animation: ballAnim 1s linear infinite alternate-reverse
+}
+
+@keyframes ballAnim {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-50px) rotate(135deg);
+    }
+    50% {
+        transform: translateY(-100px) rotate(270deg);
+    }
+    75% {
+        transform: translateY(-150px) rotate(405deg);
+    }
+    100% {
+        transform: translateY(-200px) rotate(540deg);
+    }
+
+}
+
 .img-bricks {
     position: absolute;
     bottom: 0;
@@ -333,6 +382,15 @@ nav ul {
     width: 80px;
     height: 120px;
 }
+
+.sky-brick {
+    position: absolute;
+    right: 7.7%;
+    bottom: 50.6%;
+    width: 60px;
+    height: 60px;
+}
+
 
 
 /* Interests */
@@ -421,6 +479,7 @@ nav ul {
     text-align: justify;
 }
 
+
 .project-title {
     margin-bottom: 8px;
 }
@@ -445,7 +504,6 @@ nav ul {
 }
 
 .git-link {
-    background-color: #50C878;
     border-radius: 15px;
     width: 300px;
     height: 50px;
@@ -453,6 +511,21 @@ nav ul {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    color: black; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #50C878;
+    transition: all 150ms;
+
+}
+
+.git-link:hover {
+    background-color: #50C878;
+    font-weight: 900;
+    border-width: 2px;
+    color: white;
+    fill: white;
+    transform: scale(1.05);
 }
 
 .git-icon {

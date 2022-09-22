@@ -26,6 +26,8 @@ btn.addEventListener('click', () => {
     }
 })
 
+/* Sky block */
+
 /* Project Buttons Handler */
 
 const projTitle = document.querySelector('[car-num="0"]');
