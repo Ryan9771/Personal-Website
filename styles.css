@@ -379,6 +379,11 @@ nav ul {
 
 /* Carousell Navbar */
 
+.disc-feature-list {
+    list-style-type: disc;
+    display: list-item;
+}
+
 .projects-header {
     position: absolute;
     left: 50%;
@@ -433,7 +438,6 @@ nav ul {
     width: 100%;
     height: 100%;
     padding: 5px;
-    overflow-y: scroll;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -441,7 +445,7 @@ nav ul {
 
 .git-link {
     background-color: #50C878;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 300px;
     height: 50px;
     padding: 10px 20px;
@@ -458,6 +462,7 @@ nav ul {
 
 .proj-heading {
     margin-bottom: 20px;
+    transform: translateX(-10%);
 }
 
 .proj-content {
@@ -467,21 +472,45 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
+    padding-right: 20px;
 }
 
 /* Image Styles */
 
+.proj-med-image {
+    border-radius: 10px;
+    width: 280px;
+    margin: 20px 10px;
+}
+
+.proj-small-image {
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px 10px;
+}
+
 #discord1 {
     object-fit: cover;
-    width: 300px;
-    margin: 20px 0;
-    border-radius: 10px;
 }
 
 #discord2 {
     object-fit: cover;
-    width: 300px;
-    border-radius: 10px;
+}
+
+.pi-grp-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.pi-grp-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
