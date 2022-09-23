@@ -241,28 +241,18 @@ nav ul {
 .eye {
     width: 15px;
     height: 15px;
-}
-
-.polar-bear {
-    width: 160px;
-    height: 100px;
-}
-
-.snowman {
+    border-radius: 50%;
     position: absolute;
-    left: 70%;
-    bottom: 7%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 407px;
+    bottom: 155px;
 }
 
-.snowman-img {
-    width: auto;
-    height: auto;
-    max-width: 200px;
-    
+.cow {
+    position: absolute;
+    left: 200px;
+    bottom: 10px;
+    width: 250px;
+    height: 180px;
 }
 
 

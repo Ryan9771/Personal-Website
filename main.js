@@ -26,7 +26,6 @@ btn.addEventListener('click', () => {
     }
 })
 
-/* Sky block */
 
 /* Project Buttons Handler */
 
@@ -50,4 +49,31 @@ for (let i = 0; i < labels.length; i++) {
             }
         }
     })
+}
+
+/* Cow Eye Movement */
+
+document.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const anchor = document.getElementById("anchor");
+
+    const rekt = anchor.getBoundingClientRect();
+    const anchorX = rekt.width / 2 + rekt.left;
+    const anchorY = rekt.height / 2 + rekt.top;
+
+    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+    console.log(angleDeg);
+    const eye = document.getElementById("eye");
+    eye.style.transform = `rotate(${90 + angleDeg}deg)`;
+})
+
+function angle(cx, cy, ex, ey) {
+    const dy = ey - cy;
+    const dx = ex - cx;
+    const rad = Math.atan2(dy, dx);
+    const deg = rad * 180 / Math.PI;
+
+    return deg;
 }
