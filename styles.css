@@ -153,9 +153,6 @@ nav ul {
     color: rgb(162, 66, 11);
 }
 
-
-
-
 .home {
     background-image: url('Images/snow.png');
     filter: brightness(1.15);
@@ -239,6 +236,33 @@ nav ul {
 
 .scroll:hover .hr1 {
     background-color: rgb(162, 66, 11);
+}
+
+.eye {
+    width: 15px;
+    height: 15px;
+}
+
+.polar-bear {
+    width: 160px;
+    height: 100px;
+}
+
+.snowman {
+    position: absolute;
+    left: 70%;
+    bottom: 7%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snowman-img {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    
 }
 
 
@@ -340,7 +364,7 @@ nav ul {
 #ball {
     position: absolute;
     right: 7.63%;
-    bottom: 150px;
+    bottom: 130px;
     width: 60px;
     height: 60px;
     animation: ballAnim 1s linear infinite alternate-reverse
@@ -351,16 +375,16 @@ nav ul {
         transform: translateY(0) rotate(0deg);
     }
     25% {
-        transform: translateY(-50px) rotate(135deg);
+        transform: translateY(-55px) rotate(135deg);
     }
     50% {
-        transform: translateY(-100px) rotate(270deg);
+        transform: translateY(-105px) rotate(270deg);
     }
     75% {
-        transform: translateY(-150px) rotate(405deg);
+        transform: translateY(-155px) rotate(405deg);
     }
     100% {
-        transform: translateY(-200px) rotate(540deg);
+        transform: translateY(-205px) rotate(540deg);
     }
 
 }
@@ -386,7 +410,7 @@ nav ul {
 .sky-brick {
     position: absolute;
     right: 7.7%;
-    bottom: 50.6%;
+    bottom: 49.4%;
     width: 60px;
     height: 60px;
 }
@@ -438,6 +462,16 @@ nav ul {
 
 /* Carousell Navbar */
 
+.active-list {
+    background-color: rgb(220, 104, 59);
+    color: white;
+    box-shadow: 2px 2px #0a3f6863;
+}
+
+.default-proj {
+    display: flex;
+}
+
 .disc-feature-list {
     list-style-type: disc;
     display: list-item;
@@ -475,10 +509,18 @@ nav ul {
 .project-label {
     width: 100%;
     font-size: 14px;
-    margin-bottom: 1.9rem;
-    text-align: justify;
+    margin-bottom: 1rem;
+    text-align: left;
+    transition: all 200ms;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+.project-label:hover {
+    background-color: #105D97;
+    color: white;
+    box-shadow: 2px 2px #0a3f6863;
+}
 
 .project-title {
     margin-bottom: 8px;
@@ -501,6 +543,7 @@ nav ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+    display: none;
 }
 
 .git-link {
@@ -552,9 +595,7 @@ nav ul {
 
 
 /* Toggle the displays -> temporary */
-.hidden {
-    display: none;
-}
+
 
 /* Image Styles */
 

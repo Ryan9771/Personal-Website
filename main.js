@@ -30,7 +30,24 @@ btn.addEventListener('click', () => {
 
 /* Project Buttons Handler */
 
-const projTitle = document.querySelector('[car-num="0"]');
-projTitle.addEventListener("click", () => {
-    // Something here
-})
+const labels = [...document.querySelectorAll(".project-label")];
+console.log(labels);
+const projects = [...document.querySelectorAll(".project")];
+
+const def = document.getElementById("default");
+def.style.display = "flex";
+
+for (let i = 0; i < labels.length; i++) {
+    labels[i].addEventListener("click", function() {
+        const carNum = labels[i].getAttribute("car-num");
+        
+        for (let j = 0; j < projects.length; j++) {
+            const projCarNum = projects[j].getAttribute("car-num");
+            if (carNum === projCarNum) {
+                projects[j].style.display = "flex";
+            } else {
+                projects[j].style.display = "none";
+            }
+        }
+    })
+}
