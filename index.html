@@ -1,381 +1,462 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ryan Patel</title>
-        <link rel="stylesheet" href="styles.css">
 
-    <body>
+<head>
+    <title>Ryan Patel</title>
+    <link rel="stylesheet" href="styles.css">
 
-        <!-- Navbar -->
-        <nav>
-            <a href="#" id="logo">
-                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
-                <h3 class="logo-text">Ryan</h3>
-            </a>
-            <ul>
-                <li class="nav-li">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM256 336c-18 0-32 14-32 32s13.1 32 32 32c17.1 0 32-14 32-32S273.1 336 256 336zM289.1 128h-51.1C199 128 168 159 168 198c0 13 11 24 24 24s24-11 24-24C216 186 225.1 176 237.1 176h51.1C301.1 176 312 186 312 198c0 8-4 14.1-11 18.1L244 251C236 256 232 264 232 272V288c0 13 11 24 24 24S280 301 280 288V286l45.1-28c21-13 34-36 34-60C360 159 329 128 289.1 128z"/></svg>
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-li">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"/></svg>
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-li">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                    <a target="_blank" class="nav-link" href="https://github.com/Ryan9771">Github</a>
-                </li>
-                <li class="nav-li">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"/></svg>
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+<body>
 
-        <!-- Home section -->
-        <section class="home">
-            <div class="quote">
-                <svg class="quotes-img quote-img-start" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
-                <p class="quote-text">Why do it again ...when you can get code to do it?</p>
-                <svg class="quotes-img quote-img-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"/></svg>
-            </div>
-            <h2 class="greeting">
-                <span class="greet1">Hi, </span>
-                <span class="greet2">I'm</span>
-                <span class="greet3">RYAN</span>
-            </h2>
-            <div class="scroll">
-                <p class="scroll-text">Scroll Down for More!</p>
-                <hr class="hr1">
-            </div>
-
-            <div class="custom-shape-divider-bottom-1663213249">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    <!-- Navbar -->
+    <nav>
+        <a href="#" id="logo">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                    d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z" />
+            </svg>
+            <h3 class="logo-text">Ryan</h3>
+        </a>
+        <ul>
+            <li class="nav-li">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM256 336c-18 0-32 14-32 32s13.1 32 32 32c17.1 0 32-14 32-32S273.1 336 256 336zM289.1 128h-51.1C199 128 168 159 168 198c0 13 11 24 24 24s24-11 24-24C216 186 225.1 176 237.1 176h51.1C301.1 176 312 186 312 198c0 8-4 14.1-11 18.1L244 251C236 256 232 264 232 272V288c0 13 11 24 24 24S280 301 280 288V286l45.1-28c21-13 34-36 34-60C360 159 329 128 289.1 128z" />
                 </svg>
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-li">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z" />
+                </svg>
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-li">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                </svg>
+                <a target="_blank" class="nav-link" href="https://github.com/Ryan9771">Github</a>
+            </li>
+            <li class="nav-li">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z" />
+                </svg>
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Home section -->
+    <section class="home">
+        <div class="quote">
+            <svg class="quotes-img quote-img-start" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+            </svg>
+            <p class="quote-text">Why do it again ...when you can get code to do it?</p>
+            <svg class="quotes-img quote-img-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+            </svg>
+        </div>
+        <h2 class="greeting">
+            <span class="greet1">Hi, </span>
+            <span class="greet2">I'm</span>
+            <span class="greet3">RYAN</span>
+        </h2>
+        <div class="scroll">
+            <p class="scroll-text">Scroll Down for More!</p>
+            <hr class="hr1">
+        </div>
+
+        <div class="custom-shape-divider-bottom-1663213249">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+
+    <!-- About section -->
+    <section class="carousell">
+
+        <!-- About -->
+        <div class="carousell-div">
+            <!-- About section -->
+            <div class="car-elem-wrapper">
+                <h2 class="car-header">About Me</h2>
+                <br><br>
+                <div class="car-text-wrapper" id="about">
+                    <p class="car-text">
+                        Hi there! I'm Ryan - A second year computer science
+                        student at Imperial College London! I am an enthusiastic individual
+                        who, in the space of a year, has transformed from someone with almost
+                        <strong>no</strong> experience in this remarkable field, to an <strong>optimistic thinker
+                        </strong>with
+                        experience of varying levels in: [Python, Java, JavaScript, C, etc..], [App, Web Dev], [AI &
+                        ML], [WebScraping] and more!
+                    </p>
+                </div>
             </div>
-            
-        </section>
-        
-
-        <!-- About section -->
-        <section class="carousell">
-            <div class="carousell-div">
-                <!-- About section -->
-                <div class="car-elem-wrapper">
-                    <h2 class="car-header">About Me</h2>
-                    <br><br>
-                    <div class="car-text-wrapper" id="about">
-                        <p class="car-text">
-                            Hi there! I'm Ryan - A second year computer science 
-                            student at Imperial College London! I am an enthusiastic individual
-                            who, in the space of a year, has transformed from someone with almost
-                            <strong>no</strong> experience in this remarkable field, to an <strong>optimistic thinker </strong>with 
-                            experience of varying levels in: [Python, Java, JavaScript, C, etc..], [App, Web Dev], [AI & ML], [WebScraping] and more!
-                        </p>  
-                    </div>
-                </div>
 
 
-                <!-- Interests Section -->
-                <div class="car-elem-wrapper">
-                    <h2 class="car-header">Interests</h2>
+            <!-- Interests Section -->
+            <div class="car-elem-wrapper">
+                <h2 class="car-header">Interests</h2>
+                <br>
+                <div class="car-text-wrapper" id="interests">
+                    <p class="car-text">
+                        From learning how the universe works, to adventuring through areas in technology that I have not
+                        explored, I would say I have a curious
+                        mindset. I admire putting theory to practice, and therefore, always aim to make minature
+                        projects to have hands-on
+                        knowledge. Feel free to check these <a id="proj-link" href="#projects">projects </a>out below!
+                        On the side, I play video games, sports, and I am even in an
+                        acapella group! I also always seek to make and maintain new connections, and therefore, I go out
+                        with friends at least once a week, for a
+                        good work-to-social life balance.
+                    </p>
                     <br>
-                    <div class="car-text-wrapper" id="interests">
-                        <p class="car-text">
-                            From learning how the universe works, to adventuring through areas in technology that I have not explored, I would say I have a curious
-                            mindset. I admire putting theory to practice, and therefore, always aim to make minature projects to have hands-on 
-                            knowledge. Feel free to check these <a id="proj-link" href="#projects">projects </a>out below! On the side, I play video games, sports, and I am even in an 
-                            acapella group! I also always seek to make and maintain new connections, and therefore, I go out with friends at least once a week, for a 
-                            good work-to-social life balance.
-                        </p>
-                        <br>
-                    </div>
                 </div>
-            
+            </div>
 
-                <!-- Contact Section -->
-                <div class="car-elem-wrapper">
-                    <h2 class="car-header">Contact & Resume</h2>
-                    <br><br>
-                    <div class="car-text-wrapper">
-                        <p class="car-text">Feel free to keep in touch, or to collaborate on projects!</p>
-                    </div>
-                    <br><br>
-                    <div class="icon-ctn">
-                        <a href="https://www.linkedin.com/in/ryanpatel21/">
-                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                        </a>
-                        <a href="https://github.com/Ryan9771">
-                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                        </a>
-                        <a href="mailto: ryan.patel21@imperial.ac.uk">
-                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                        </a>
-                    </div>
-                    <hr class="resume-hr">
-                    <a class="resume-icon" href="./Files/Ryan_Resume.pdf" download="Ryan">
-                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg>
+
+            <!-- Contact Section -->
+            <div class="car-elem-wrapper">
+                <h2 class="car-header">Contact & Resume</h2>
+                <br><br>
+                <div class="car-text-wrapper">
+                    <p class="car-text">Feel free to keep in touch, or to collaborate on projects!</p>
+                </div>
+                <br><br>
+                <div class="icon-ctn">
+                    <a href="https://www.linkedin.com/in/ryanpatel21/">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg>
                     </a>
-                    <br><br><br>
-
+                    <a href="https://github.com/Ryan9771">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </a>
+                    <a href="mailto: ryan.patel21@imperial.ac.uk">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>
+                    </a>
                 </div>
-
+                <hr class="resume-hr">
+                <a class="resume-icon" href="./Files/Ryan_Resume.pdf" download="Ryan">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
+                    </svg>
+                </a>
+                <br><br><br>
 
             </div>
+        </div>
 
-            <!-- Contact -->
 
-            <!-- Button and images -->
-            <button type="button" class="f-btn">
-                <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 88L32 208c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l288 0 0 88c0 9.6 5.7 18.2 14.5 22z"/></svg>
-            </button>
+        <!-- Button and images -->
+        <button type="button" class="f-btn">
+            <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 88L32 208c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l288 0 0 88c0 9.6 5.7 18.2 14.5 22z" />
+            </svg>
+        </button>
 
-            <hr class="car-hr">
-            <div id="moo">
-                <img src="Images/normBubble.png" alt="" id="norm-bubble">
-                <span class="moo-text">moo</span>
+        <hr class="car-hr">
+        <div id="moo">
+            <img src="Images/normBubble.png" alt="" id="norm-bubble">
+            <span class="moo-text">moo</span>
+        </div>
+        <div id="ow">
+            <img src="Images/owBubble.png" alt="" id="ow-bubble">
+            <span class="ow-text">OW!</span>
+        </div>
+
+        <img src="Images/cow.png" id="anchor" alt="" class="cow">
+        <img src="Images/eye.png" id="eye" alt="" class="eye">
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <!-- <h1 class="projects-header">Projects</h1> -->
+
+        <div class="project-list">
+            <div class="project-label active-list" car-num="0">
+                <h3 class="project-title"><strong>Discord Bot</strong></h3>
+                <p>An interactive bot for school servers</p>
             </div>
-            <div id="ow">
-                <img src="Images/owBubble.png" alt="" id="ow-bubble">
-                <span class="ow-text">OW!</span>
+            <div class="project-label" car-num="1">
+                <h3 class="project-title">Calculator</h3>
+                <p>An iOS Calculator clone</p>
             </div>
+            <div class="project-label" car-num="2">
+                <h3 class="project-title">Tic Tac Toe</h3>
+                <p>Single or Multi-player tic tac toe</p>
+            </div>
+            <div class="project-label" car-num="3">
+                <h3 class="project-title">Wordle</h3>
+                <p>A clone of the game Wordle, using JFrame</p>
+            </div>
+            <div class="project-label" car-num="4">
+                <h3 class="project-title">Google Foobar Solutions</h3>
+                <p>Answers and explanation to the foobar challenges</p>
+            </div>
+            <div class="project-label" car-num="5">
+                <h3 class="project-title">Data Structures</h3>
+                <p>Many data structures written in Java</p>
+            </div>
+        </div>
 
-            <img src="Images/cow.png" id="anchor" alt="" class="cow">
-            <img src="Images/eye.png" id="eye" alt="" class="eye">
-        </section>
+        <div class="projects-carousell">
 
-
-        <!-- Projects Section -->
-        <section class="projects">
-            <!-- <h1 class="projects-header">Projects</h1> -->
-
-            <div class="project-list">
-                <div class="project-label active-list" car-num="0">
-                    <h3 class="project-title"><strong>Discord Bot</strong></h3>
-                    <p>An interactive bot for school servers</p>
-                </div>
-                <div class="project-label" car-num="1">
-                    <h3 class="project-title">Calculator</h3>
-                    <p>An iOS Calculator clone</p>
-                </div>
-                <div class="project-label" car-num="2">
-                    <h3 class="project-title">Tic Tac Toe</h3>
-                    <p>Single or Multi-player tic tac toe</p>
-                </div>
-                <div class="project-label" car-num="3">
-                    <h3 class="project-title">Wordle</h3>
-                    <p>A clone of the game Wordle, using JFrame</p>
-                </div>
-                <div class="project-label" car-num="4">
-                    <h3 class="project-title">Google Foobar Solutions</h3>
-                    <p>Answers and explanation to the foobar challenges</p>
-                </div>
-                <div class="project-label" car-num="5">
-                    <h3 class="project-title">Data Structures</h3>
-                    <p>Many data structures written in Java</p>
-                </div>
-            </div> 
-
-            <div class="projects-carousell">
-
-                <!-- Discord bot -->
-                <div class="project" id="default" car-num="0">
-                    <h2 class="proj-heading">Discord Bot</h2>
+            <!-- Discord bot -->
+            <div class="project" id="default" car-num="0">
+                <h2 class="proj-heading">Discord Bot</h2>
+                <br>
+                <div class="proj-content">
+                    <a href="https://github.com/Ryan9771/General-Purpose-Discord-Bot" class="git-link" target="_blank">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                        <span">Click to see the repository!</span>
+                    </a>
+                    <p>
+                        This discord bot was made not only to make my school discord server more lively, but also to
+                        learn more about the discord API.
+                        Rather than importing an existing bot, I felt that creating my own bot from scratch was a good
+                        learning opportunity. It could hence be customised to account for the needs of the server. Below
+                        shows an example of the
+                        bot returning a 'hi', based on your username, and displays some of the core commands this bot
+                        has in store.
+                    </p>
+                    <div class="pi-grp-1">
+                        <img class="proj-med-image" id="discord1" src="Images/DiscordBot/discord1.png" alt="Hi">
+                        <img class="proj-med-image" id="discord2" src="Images/DiscordBot/discord2.png" alt="Help">
+                    </div>
+                    <p>
+                        This bot was developed during the women's UEFA Euros. Therefore, I introduced an easy way to
+                        retrieve football scores by the comfort of
+                        the discord channel. All football matches, their scores, and their updates for any day could be
+                        retrieved by typing <strong>&weuro &ltdate in July&gt</strong> as shown below
+                    </p>
+                    <img src="Images/DiscordBot/weuro.png" class="proj-small-image" alt="">
+                    <p>
+                        In addition to this, the bot calls on other APIs such as a weather API that retrives current
+                        weather conditions
+                        and weather forecasts for any given location. Other features include:- <br>
+                        Asynchronous timers,
+                        asynchronous reminders that pings the user at the specified timer with the set message,
+                        conversion between celcius and fahrenheit and vice versa,
+                        currency conversion, simple web searches,
+                        ability to add commands within a channel,
+                        8ball machine,
+                        and others!
+                        <br><br>
+                        Feel free to have a look at some of these features demonstrated below:
+                    </p>
                     <br>
-                    <div class="proj-content">
-                        <a href="https://github.com/Ryan9771/General-Purpose-Discord-Bot" class="git-link" target="_blank">
-                            <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            <span style="color: black;">Click to see the repository!</span>
-                        </a>
-                        <p>
-                            This discord bot was made not only to make my school discord server more lively, but also to learn more about the discord API.
-                            Rather than importing an existing bot, I felt that creating my own bot from scratch was a good learning opportunity. It could hence be customised to account for the needs of the server. Below shows an example of the 
-                            bot returning a 'hi', based on your username, and displays some of the core commands this bot has in store.
-                        </p> 
-                        <div class="pi-grp-1">
-                            <img class="proj-med-image" id="discord1" src="Images/DiscordBot/discord1.png" alt="Hi">
-                            <img class="proj-med-image" id="discord2" src="Images/DiscordBot/discord2.png" alt="Help">
-                        </div>
-                        <p>
-                            This bot was developed during the women's UEFA Euros. Therefore, I introduced an easy way to retrieve football scores by the comfort of 
-                            the discord channel. All football matches, their scores, and their updates for any day could be retrieved by typing <strong>&weuro &ltdate in July&gt</strong> as shown below
-                        </p>
-                        <img src="Images/DiscordBot/weuro.png" class="proj-small-image" alt="">
-                        <p>
-                            In addition to this, the bot calls on other APIs such as a weather API that retrives current weather conditions
-                            and weather forecasts for any given location. Other features include:- <br>
-                            Asynchronous timers,
-                            asynchronous reminders that pings the user at the specified timer with the set message,
-                            conversion between celcius and fahrenheit and vice versa,
-                            currency conversion, simple web searches,
-                            ability to add commands within a channel,
-                            8ball machine,
-                            and others!
-                            <br><br>
-                            Feel free to have a look at some of these features demonstrated below:
-                        </p>
+                    <div class="pi-grp-2">
+                        <img src="Images/DiscordBot/search.png" alt="" class="proj-small-image">
+                        <img src="Images/DiscordBot/tempNforecast.png" alt="" class="proj-small-image">
+                        <img src="Images/DiscordBot/reminder.png" alt="" class="proj-med-image">
+                        <img src="Images/DiscordBot/conversion.png" alt="" class="proj-med-image">
+                        <img src="Images/DiscordBot/customCommand.png" alt="" class="proj-med-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculator -->
+            <div class="project" car-num="1">
+                <h2 class="proj-heading">iOS Calculator Clone</h2>
+                <br>
+                <div class="proj-content">
+                    <a href="https://github.com/Ryan9771/Calculator" class="git-link" target="_blank">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                        <span>Click to see the repository!</span>
+                    </a>
+                    <p>
+                        A replica of the famous iOS iPhone calculator in vertical mode. This project was done in react
+                        native,
+                        and was undertaken in order to brush up on my design skills. I hence tried to make it look as
+                        accurate
+                        as possible.
                         <br>
-                        <div class="pi-grp-2">
-                            <img src="Images/DiscordBot/search.png" alt="" class="proj-small-image">
-                            <img src="Images/DiscordBot/tempNforecast.png" alt="" class="proj-small-image">
-                            <img src="Images/DiscordBot/reminder.png" alt="" class="proj-med-image">
-                            <img src="Images/DiscordBot/conversion.png" alt="" class="proj-med-image">
-                            <img src="Images/DiscordBot/customCommand.png" alt="" class="proj-med-image">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Calculator -->
-                <div class="project" car-num="1">
-                    <h2 class="proj-heading">iOS Calculator Clone</h2>
-                    <br>
-                    <div class="proj-content">
-                        <a href="https://github.com/Ryan9771/Calculator" class="git-link" target="_blank">
-                            <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            <span style="color: black;">Click to see the repository!</span>
-                        </a>
-                        <p>
-                            A replica of the famous iOS iPhone calculator in vertical mode. This project was done in react native,
-                            and was undertaken in order to brush up on my design skills. I hence tried to make it look as accurate 
-                            as possible.
-                            <br>
-                            <br>
-                            I had of course also added the calculator functionality to the application, and it is hence able to perform 
-                            all operator functions, along with the combined usage of different operators for various calculations.
-                        </p>
-                        <img class="phone-sc" src="Images/Calculator/Calculator.png" alt="Calculator">
-                    </div>
-                </div>
-
-                <!-- Tic Tac Toe -->
-                <div class="project" car-num="2">
-                    <h2 class="proj-heading">Tic Tac Toe</h2>
-                    <br>
-                    <div class="proj-content">
-                        <a href="https://github.com/Ryan9771/React-Native-Tic-Tac-Toe" class="git-link" target="_blank">
-                            <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            <span style="color: black;">Click to see the repository!</span>
-                        </a>
-                        <p>
-                            Tic Tac Toe, done in react native. This was actually one of the first projects
-                            I had ever done in react native, and hence, it was a good way to practice my 
-                            JavaScript skills.
-                            <br><br>
-                            I had initially developed a Multi-player mode, as most tic tac toe apps start off.
-                            Implementing the knowledge gave me a deeper inside on how to pass around values from 
-                            one component to another. I also had played around with react native's reanimated package
-                            where I aimed to draw a line through the winning icons once a winner has been found. I also 
-                            added a bounce animation for when a user presses a button to give it more of an interactive
-                            experience. Furthermore, upon a win, a confetti bomb is dropped from the top of the screen 
-                            for a few seconds.
-                        </p>
-                        <img src="Images/TicTacToe/MultWin.png" alt="" class="phone-sc">
                         <br>
-                        As an extension to the project, I had added a single player mode where I programmed an unbeatable
-                        AI for the player to play against. This was done using the minimax algorithm, and a seperate logic
-                        to account for the placement of the icon by the AI after each turn takes place. A possible future 
-                        extension could be using the depth of the minimax algorithm to vary the difficulty of the game by
-                        randomising the placement of the icon by the AI depending on the depth of the recursion.
-                        <img src="Images/TicTacToe/SinglePlayer.png" alt="" class="phone-sc">
-                        <p>
-                            I finally played around with react native's 'Stack' navigator package to give the player an option 
-                            on which mode they would like to play. I chose to use different screens instead of a simple toggle 
-                            on a single screen to explore the use of different packages in react native.
-                        </p>
-                        <img src="Images/TicTacToe/HomePage.png" alt="" class="phone-sc">
-                    </div>
-                </div>
-
-                <!-- Wordle Clone -->
-                <div class="project" car-num="3">
-                    <h2 class="proj-heading">Wordle</h2>
-                    <br>
-                    <div class="proj-content">
-                        <a href="https://github.com/Ryan9771/Wordle_Clone" class="git-link" target="_blank">
-                            <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            <span style="color: black;">Click to see the repository!</span>
-                        </a>
-                        <p>
-                            During the time I made this, Wordle was the 'craze'. People were 
-                            using it on the daily. In fact, the app was introduced to me by my 
-                            mother. It is a fun game that makes one think, therefore, what way
-                            to think further by trying to recreate this app. Here is what a full
-                            game that I played on my Wordle clone looks like:
-                        </p>
-                        <img src="Images/Wordle/game.png" alt="" class="wordle-sc">
-                        <p>
-                            The last 2 rows were quite unlucky, but oh well. This app was made 
-                            using nothing but Java. I used JFrame and swing to create the layout 
-                            and implement all the listeners. It was quite interesting to break the 
-                            problem down into:- how to prevent users from overflowing onto the next line, 
-                            how to prevent users from clicking 'enter' without completing a row, how to 
-                            parse submitted entries into their right letter colours, which was arguably, the 
-                            most difficult part. I had finally managed to come up with the logic shown below:
-                        </p>
-                        <img src="Images/Wordle/colourCode.png" alt="" class="code-sc">
-                        <p>
-                            I thoroughly enjoyed making this clone. It was a fun challenge that I will definitely
-                            seek to face more in the future.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Google Foobar Solutions -->
-                <div class="project" car-num="4">
-                    <h2 class="proj-heading">Google Foobar Solutions</h2>
-                    <br>
-                    <div class="proj-content">
-                        <a href="https://github.com/Ryan9771/Google-Foobar-Solutions" class="git-link" target="_blank">
-                            <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            <span style="color: black;">Click to see the repository!</span>
-                        </a>
-                        <p>
-                            The Google foobar challenges is a set of challenges that Google selectively sends out based on
-                            your search patterns. For example, a friend of mine needed to take a basic coding module. Upon using 
-                            Google Chrome for a lot of coding-related searches, Google seemed to have sent out an invite 
-                            for my friend to accept. I ended up doing the challenges on their behalf since I enjoy problem solving.
-                            <br><br>
-                            Therefore, this repository contains the solutions to the challenges I have currently completed in the 
-                            Google Foobar Challenges. I encourage you to give the challenges a try yourself before looking at the 
-                            solutions for guidance!
-                        </p>
-                        <img src="Images/GoogleFoobar/solutions.png" alt="" class="proj-small-image">
-                    </div>
-                </div>
-
-                <!-- Data Structures -->
-                <div class="project" car-num="5">
-                    <h2 class="proj-heading">Data Structures in Java</h2>
-                    <br>
-                    <div class="proj-content">
-                        <a href="https://github.com/Ryan9771/Data-Structures" class="git-link" target="_blank">
-                            <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            <span>Click to see the repository!</span>
-                        </a>
-                        <p>
-                            I find data structures and the way they work fascinating. It is incredible how 
-                            data could be stored and retrieved in many ways. In this repository you will find 
-                            some of the data structures that I experimented with. These include different types of trees,
-                            linked lists, stacks, queues and heaps!
-                        </p>
-                        <img src="Images/DataStructures/structures.png" alt="" class="proj-med-image">
-                        <p>
-                            Most of these structures will have a <strong>main</strong> function which
-                            tests out the functionality of the structure, and may even print out a visual 
-                            representation of it.
-                        </p>
-                        <img src="Images/DataStructures/test.png" alt="" class="proj-small-image">
-                    </div>
+                        I had of course also added the calculator functionality to the application, and it is hence able
+                        to perform
+                        all operator functions, along with the combined usage of different operators for various
+                        calculations.
+                    </p>
+                    <img class="phone-sc" src="Images/Calculator/Calculator.png" alt="Calculator">
                 </div>
             </div>
-            <img class="sky-brick" src="Images/brick.jpg" alt="">
-            <img id="ball" src="Images/ball.png" alt="">
-            <div class="img-bricks"></div>
-            <img class="pipe" src="Images/pipe.png">
-        </section>
-        
 
-        <script src="main.js"></script>
-    </body> 
+            <!-- Tic Tac Toe -->
+            <div class="project" car-num="2">
+                <h2 class="proj-heading">Tic Tac Toe</h2>
+                <br>
+                <div class="proj-content">
+                    <a href="https://github.com/Ryan9771/React-Native-Tic-Tac-Toe" class="git-link" target="_blank">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                        <span>Click to see the repository!</span>
+                    </a>
+                    <p>
+                        Tic Tac Toe, done in react native. This was actually one of the first projects
+                        I had ever done in react native, and hence, it was a good way to practice my
+                        JavaScript skills.
+                        <br><br>
+                        I had initially developed a Multi-player mode, as most tic tac toe apps start off.
+                        Implementing the knowledge gave me a deeper inside on how to pass around values from
+                        one component to another. I also had played around with react native's reanimated package
+                        where I aimed to draw a line through the winning icons once a winner has been found. I also
+                        added a bounce animation for when a user presses a button to give it more of an interactive
+                        experience. Furthermore, upon a win, a confetti bomb is dropped from the top of the screen
+                        for a few seconds.
+                    </p>
+                    <img src="Images/TicTacToe/MultWin.png" alt="" class="phone-sc">
+                    <br>
+                    As an extension to the project, I had added a single player mode where I programmed an unbeatable
+                    AI for the player to play against. This was done using the minimax algorithm, and a seperate logic
+                    to account for the placement of the icon by the AI after each turn takes place. A possible future
+                    extension could be using the depth of the minimax algorithm to vary the difficulty of the game by
+                    randomising the placement of the icon by the AI depending on the depth of the recursion.
+                    <img src="Images/TicTacToe/SinglePlayer.png" alt="" class="phone-sc">
+                    <p>
+                        I finally played around with react native's 'Stack' navigator package to give the player an
+                        option
+                        on which mode they would like to play. I chose to use different screens instead of a simple
+                        toggle
+                        on a single screen to explore the use of different packages in react native.
+                    </p>
+                    <img src="Images/TicTacToe/HomePage.png" alt="" class="phone-sc">
+                </div>
+            </div>
+
+            <!-- Wordle Clone -->
+            <div class="project" car-num="3">
+                <h2 class="proj-heading">Wordle</h2>
+                <br>
+                <div class="proj-content">
+                    <a href="https://github.com/Ryan9771/Wordle_Clone" class="git-link" target="_blank">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                        <span>Click to see the repository!</span>
+                    </a>
+                    <p>
+                        During the time I made this, Wordle was the 'craze'. People were
+                        using it on the daily. In fact, the app was introduced to me by my
+                        mother. It is a fun game that makes one think, therefore, what way
+                        to think further by trying to recreate this app. Here is what a full
+                        game that I played on my Wordle clone looks like:
+                    </p>
+                    <img src="Images/Wordle/game.png" alt="" class="wordle-sc">
+                    <p>
+                        The last 2 rows were quite unlucky, but oh well. This app was made
+                        using nothing but Java. I used JFrame and swing to create the layout
+                        and implement all the listeners. It was quite interesting to break the
+                        problem down into:- how to prevent users from overflowing onto the next line,
+                        how to prevent users from clicking 'enter' without completing a row, how to
+                        parse submitted entries into their right letter colours, which was arguably, the
+                        most difficult part. I had finally managed to come up with the logic shown below:
+                    </p>
+                    <img src="Images/Wordle/colourCode.png" alt="" class="code-sc">
+                    <p>
+                        I thoroughly enjoyed making this clone. It was a fun challenge that I will definitely
+                        seek to face more in the future.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Google Foobar Solutions -->
+            <div class="project" car-num="4">
+                <h2 class="proj-heading">Google Foobar Solutions</h2>
+                <br>
+                <div class="proj-content">
+                    <a href="https://github.com/Ryan9771/Google-Foobar-Solutions" class="git-link" target="_blank">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                        <span>Click to see the repository!</span>
+                    </a>
+                    <p>
+                        The Google foobar challenges is a set of challenges that Google selectively sends out based on
+                        your search patterns. For example, a friend of mine needed to take a basic coding module. Upon
+                        using
+                        Google Chrome for a lot of coding-related searches, Google seemed to have sent out an invite
+                        for my friend to accept. I ended up doing the challenges on their behalf since I enjoy problem
+                        solving.
+                        <br><br>
+                        Therefore, this repository contains the solutions to the challenges I have currently completed
+                        in the
+                        Google Foobar Challenges. I encourage you to give the challenges a try yourself before looking
+                        at the
+                        solutions for guidance!
+                    </p>
+                    <img src="Images/GoogleFoobar/solutions.png" alt="" class="proj-small-image">
+                </div>
+            </div>
+
+            <!-- Data Structures -->
+            <div class="project" car-num="5">
+                <h2 class="proj-heading">Data Structures in Java</h2>
+                <br>
+                <div class="proj-content">
+                    <a href="https://github.com/Ryan9771/Data-Structures" class="git-link" target="_blank">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                        <span>Click to see the repository!</span>
+                    </a>
+                    <p>
+                        I find data structures and the way they work fascinating. It is incredible how
+                        data could be stored and retrieved in many ways. In this repository you will find
+                        some of the data structures that I experimented with. These include different types of trees,
+                        linked lists, stacks, queues and heaps!
+                    </p>
+                    <img src="Images/DataStructures/structures.png" alt="" class="proj-med-image">
+                    <p>
+                        Most of these structures will have a <strong>main</strong> function which
+                        tests out the functionality of the structure, and may even print out a visual
+                        representation of it.
+                    </p>
+                    <img src="Images/DataStructures/test.png" alt="" class="proj-small-image">
+                </div>
+            </div>
+        </div>
+        <img class="sky-brick" src="Images/brick.jpg" alt="">
+        <img id="ball" src="Images/ball.png" alt="">
+        <div class="img-bricks"></div>
+        <img class="pipe" src="Images/pipe.png">
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
 </html>
