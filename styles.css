@@ -40,6 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 7px;
+    margin-left: 20px;
     padding: 1px 5px;
     transition: .2s;
 }
@@ -254,6 +255,56 @@ nav ul {
     width: 250px;
     height: 180px;
 }
+
+#moo {
+    position: absolute;
+    left: 410px;
+    bottom: 180px;
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+.moo-text {
+    font-size: 18px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 17px;
+    right: 75px;
+    z-index: 100;
+    font-weight: 600;
+}
+
+#norm-bubble {
+    width: 100px;
+    height: 80px;
+}
+
+#ow {
+    position: absolute;
+    left: 460px;
+    bottom: 150px;
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#ow-bubble {
+    width: 130px;
+    height: 110px;
+}
+
+.ow-text {
+    color: rgb(162, 66, 11);
+    font-size: 18px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 25px;
+    right: 95px;
+    z-index: 100;
+    font-weight:bolder;
+}
+
 
 
 .custom-shape-divider-bottom-1663213249 {

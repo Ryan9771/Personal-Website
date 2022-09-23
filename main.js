@@ -52,20 +52,17 @@ for (let i = 0; i < labels.length; i++) {
 }
 
 /* Cow Eye Movement */
+const anchor = document.getElementById("anchor");
+const rekt = anchor.getBoundingClientRect();
+const anchorX = rekt.width / 2 + rekt.left;
+const anchorY = rekt.height / 2 + rekt.top;
+const eye = document.getElementById("eye");
 
 document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
-    const anchor = document.getElementById("anchor");
-
-    const rekt = anchor.getBoundingClientRect();
-    const anchorX = rekt.width / 2 + rekt.left;
-    const anchorY = rekt.height / 2 + rekt.top;
-
     const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
 
-    console.log(angleDeg);
-    const eye = document.getElementById("eye");
     eye.style.transform = `rotate(${90 + angleDeg}deg)`;
 })
 
@@ -77,3 +74,19 @@ function angle(cx, cy, ex, ey) {
 
     return deg;
 }
+
+
+/* Triggers the moo or the ow speech bubble on hover or press */
+const moo = document.getElementById("moo");
+anchor.onmouseover = () => {
+    moo.style.display = "flex";
+    setTimeout(() => { moo.style.display = "none" }, 1000);
+}
+
+const ow = document.getElementById("ow");
+anchor.addEventListener("click", () => {
+    moo.style.display = "none";
+    ow.style.display = "flex";
+    setTimeout(() => { ow.style.display = "none" }, 1000);
+
+})
