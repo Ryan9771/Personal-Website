@@ -19,7 +19,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #FCF4D7;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -339,7 +339,8 @@ nav ul {
     width: 100%;
     height: 100vh;
     /* background-image: linear-gradient(#d9d8d1, #FCF4D7); */
-    background-color: #FCF4D7;
+    /* background-color: #e8ffff; */
+    background-image: linear-gradient(#59bfff, #FCF4D7);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -406,8 +407,8 @@ nav ul {
     position: absolute;
     right: 7.63%;
     bottom: 130px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     animation: ballAnim 1s linear infinite alternate-reverse
 }
 
@@ -416,16 +417,16 @@ nav ul {
         transform: translateY(0) rotate(0deg);
     }
     25% {
-        transform: translateY(-55px) rotate(135deg);
+        transform: translateY(-37px) rotate(135deg);
     }
     50% {
-        transform: translateY(-105px) rotate(270deg);
+        transform: translateY(-74px) rotate(270deg);
     }
     75% {
-        transform: translateY(-155px) rotate(405deg);
+        transform: translateY(-111px) rotate(405deg);
     }
     100% {
-        transform: translateY(-205px) rotate(540deg);
+        transform: translateY(-148px) rotate(540deg);
     }
 
 }
@@ -442,20 +443,19 @@ nav ul {
 
 .pipe {
     position: absolute;
-    right: 7%;
+    right: 100px;
     bottom: 50px;
-    width: 80px;
-    height: 120px;
+    width: 60px;
+    height: 100px;
 }
 
 .sky-brick {
     position: absolute;
-    right: 7.7%;
-    bottom: 49.4%;
-    width: 60px;
-    height: 60px;
+    right: 110px;
+    bottom: 320px;
+    width: 40px;
+    height: 40px;
 }
-
 
 
 /* Interests */
@@ -502,8 +502,16 @@ nav ul {
 
 /* Side info bar */
 
-.info-bar
-
+/* .info-bar {
+    width: 200px;
+    height: 300px;
+    background-color: #2a363b;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+} */
 
 
 
@@ -512,7 +520,7 @@ nav ul {
 /* Carousell Navbar */
 
 .active-list {
-    background-color: rgb(220, 104, 59);
+    background-color: #004274;
     color: white;
     box-shadow: 2px 2px #0a3f6863;
 }
@@ -568,7 +576,7 @@ nav ul {
 .project-label:hover {
     background-color: #105D97;
     color: white;
-    box-shadow: 2px 2px #0a3f6863;
+    box-shadow: 2px 1px #0a3f6863;
 }
 
 .project-title {
@@ -578,10 +586,16 @@ nav ul {
 /* The carousell of projects */
 .projects-carousell {
     position: relative;
-    left: 15%;
-    top: -4%;
-    width: 50vw;
-    height: 70vh;
+    left: 20%;
+    top: 0%;
+    width: 60vw;
+    height: 74vh;
+    padding: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 20px;
+    padding-bottom: 0;
 
 }
 
@@ -591,8 +605,10 @@ nav ul {
     padding: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     display: none;
+    border-radius: 10px;
 }
 
 .git-link {
@@ -640,6 +656,7 @@ nav ul {
     align-items: center;
     overflow-y: scroll;
     padding-right: 20px;
+    margin-left: 20px;
 }
 
 

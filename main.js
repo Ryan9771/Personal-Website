@@ -38,7 +38,12 @@ def.style.display = "flex";
 
 for (let i = 0; i < labels.length; i++) {
     labels[i].addEventListener("click", function() {
+
+        const activeProj = document.querySelector(".active-list");
+        activeProj.classList.remove("active-list");
+
         const carNum = labels[i].getAttribute("car-num");
+        labels[i].classList.add("active-list")
         
         for (let j = 0; j < projects.length; j++) {
             const projCarNum = projects[j].getAttribute("car-num");
