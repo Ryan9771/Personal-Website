@@ -1,0 +1,1 @@
+Upon scrolling from the home page, the box shadow can slowly go to 0

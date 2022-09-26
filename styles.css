@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    --background-primary: #fdefe3;
+    --background-secondary: #2e2f83;
+    --header-primary: #6D2F09;
+    --text-primary: #2d2f83;
+
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    overscroll-behavior: none;
+    background-color: var(--background-primary);
+}
+
+.icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 3px 7px;
+    transition: .2s;
+    /* border-style: solid; */
+    /* border-color: black; */
+
+}
+
+.logo-icon {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 30px 10px;
+    padding-left: 20px;
+    color: #393b8c;
+}
+
+#logo:hover {
+    background-color: rgb(162, 66, 11);
+    transform: scale(1.1);
+    border-radius: 7px;
+    padding: 1px 7px;
+}
+
+#logo:hover .logo-text {
+    color: white;
+}
+
+#logo:hover .logo-icon {
+    fill: white;
+}
+
+nav h3 {
+    cursor: pointer;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 50px;
+}
+
+.nav-li {
+    display: flex;
+    transition: all .2s;
+    border-radius: 7px;
+    padding: 3px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-li:hover {
+    transform: scale(1.1);
+    background-color: rgb(162, 66, 11);
+}
+
+.nav-li:hover .nav-link {
+    color: rgb(248, 245, 223); 
+}
+
+.nav-li:hover .icon {
+    fill: white;
+}
+
+
+/* ==== HOME PAGE ==== */
+
+#home {
+    background-color: var(--background-primary);
+    width: 100%;
+    height: 100vh; 
+}
+
+.heading {
+    position: absolute;
+    left: 13rem;
+    top: 15rem;
+    width: 25%;
+}
+
+.home-heading {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    color: var(--header-primary);
+    margin-bottom: 2.5rem;
+}
+
+.home-text {
+    font-size: 1.1rem;
+    color: black;
+    line-height: 2rem;
+    font-weight: 900;
+}
+
+.home-img {
+    border-radius: 1rem;
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    top: 13rem;
+    right: 10rem;
+    box-shadow: 1rem 1rem black;
+}
