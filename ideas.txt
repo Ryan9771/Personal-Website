@@ -1,3 +1,3 @@
 - Upon scrolling from the home page, the box shadow can slowly go to 0
-- Increase thickness of header font using the roboto font
 - maybe some mini animal that is on the side of the blue box and the eye that follows it everywhere
+- Small cards for the projects
