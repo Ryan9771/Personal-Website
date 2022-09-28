@@ -191,12 +191,13 @@ nav ul {
 
 .home-img {
     border-radius: 1rem;
-    width: 30rem;
-    height: 20rem;
+    width: 22rem;
+    height: 26rem;
     position: absolute;
-    top: 13rem;
+    top: 11rem;
     right: 10rem;
-    box-shadow: 1rem 1rem black;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.337);
+    border: solid 1px black;
 }
 
 
