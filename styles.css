@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter&family=Open+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
     font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
-    --background-primary: #fdefe3;
+    font-family: 'Open Sans', sans-serif;
+    --background-primary: rgb(254, 253, 232);
     --background-secondary: #2e2f83;
-    --header-primary: #6D2F09;
+    --header-primary: #309c4d;
     --text-primary: #2d2f83;
 
 }
@@ -127,34 +126,67 @@ nav ul {
 
 /* ==== HOME PAGE ==== */
 
+.btm-left-corner {
+    position: absolute;
+    left: 8rem;
+    bottom: 16rem;
+    width: 9rem;
+    height: 6rem;
+}
+
+.top-right-corner {
+    position: absolute;
+    left: 37rem;
+    top: 11.4rem;
+    width: 9rem;
+    height: 6rem; 
+}
+
 #home-section {
     background-color: var(--background-primary);
     width: 100%;
     height: 100vh; 
 }
 
+.greeting-1 {
+    font-size: 2rem;
+    margin: 1rem 0.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.greeting-2 {
+    font-size: 2rem;
+    margin-left: 0.6rem;
+}
+
 .heading {
     position: absolute;
     left: 13rem;
-    top: 17rem;
-    width: 25%;
+    top: 15rem;
+    width: 40rem;
     z-index: 2;
 }
 
 .home-heading {
-    font-size: 3.5rem;
-    letter-spacing: 0.2rem;
+    font-size: 4.2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2.7rem;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 1.3rem;
     color: var(--header-primary);
-    margin-bottom: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
 }
 
 .home-text {
-    font-size: 1.1rem;
-    color: black;
+    font-size: 1.2rem;
     line-height: 2rem;
-    font-weight: 900;
+    font-weight: 500;
+    width: 22rem;
+    display: block;
+    position: relative;
+    left: 7rem;
 }
 
 .home-img {
