@@ -26,6 +26,14 @@ body {
     background-color: var(--background-primary);
 }
 
+.break-line {
+    margin: 2rem 0rem;
+    background-color: none;
+    border-top-width: 0.05rem;
+    border-top-style: solid;
+    border-top-color: rgb(194, 194, 194);
+}
+
 /* ==== NAV BAR ==== */
 
 .icon {
@@ -283,17 +291,40 @@ nav ul {
 /* ===== ABOUT SECTION ====== */
 
 #about-section {
+    margin-top: 5rem;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+}
+
+.heading-ctn {
+    height: 30rem;
+    margin-left: 2rem;
+    width: 35rem;
+    border-right-style: solid;
+    border-right-width: 0.1rem;
+    border-right-color: rgba(82, 82, 82, 0.842);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#about-ctn {
-    width: 80%;
-    height: 80%;
-    border-radius: 1.5rem;
+.heading-about {
+    font-size: 4rem;
 }
 
+
+
+
+
+
+/* ==== PROJECT SECTION ==== */
+
+#project-section {
+    width: 100%;
+    height: 70vh;
+}
