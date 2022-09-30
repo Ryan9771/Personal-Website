@@ -34,6 +34,8 @@ body {
     border-top-color: rgb(194, 194, 194);
 }
 
+
+
 /* ==== NAV BAR ==== */
 
 .icon {
@@ -320,7 +322,7 @@ nav ul {
 
 .heading-about {
     font-size: 4rem;
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
 }
 
 .about-text {
@@ -353,7 +355,7 @@ nav ul {
     right: 3rem;
 }
 
-.next-btn-icon {
+#next-btn-icon {
     fill: black;
     width: 2rem;
     height: 2rem;
@@ -361,9 +363,41 @@ nav ul {
     cursor: pointer;
 }
 
-.next-btn-icon:hover {
+#next-btn-icon:hover {
     transform: scale(1.2);
     fill: var(--background-secondary)
+}
+
+.hidden {
+    display: none;
+}
+
+.about-icons-ctn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-icons {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    color: black;
+    font-size: 1.1rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+}
+
+.contact-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: black;
+    margin-right: 0.5rem;
 }
 
 
