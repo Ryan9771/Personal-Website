@@ -374,9 +374,12 @@ nav ul {
 
 .about-icons-ctn {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    margin-top: 3rem;
 }
 
 .contact-icons {
@@ -384,7 +387,7 @@ nav ul {
     padding: 0.5rem;
     align-items: center;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-style: solid;
     border-color: black;
     border-width: 2px;
