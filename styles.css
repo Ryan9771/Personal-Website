@@ -297,24 +297,73 @@ nav ul {
     position: relative;
     display: flex;
     align-items: center;
-    border-style: solid;
-    border-color: black;
+}
+
+.about-ctn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .heading-ctn {
-    height: 30rem;
+    height: 100%;
     margin-left: 2rem;
-    width: 35rem;
     border-right-style: solid;
     border-right-width: 0.1rem;
     border-right-color: rgba(82, 82, 82, 0.842);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 2;
 }
 
 .heading-about {
     font-size: 4rem;
+    padding: 2rem 5rem;
+}
+
+.about-text {
+    height: 100%;
+    display: flex;
+    flex: 3;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+.about-text-ctn {
+    margin-top: 2.5rem;
+}
+
+.about-text-ctn-text {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+    width: 90%;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+.next-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+}
+
+.next-btn-icon {
+    fill: black;
+    width: 2rem;
+    height: 2rem;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.next-btn-icon:hover {
+    transform: scale(1.2);
+    fill: var(--background-secondary)
 }
 
 
