@@ -29,10 +29,8 @@ body {
 .break-line {
     margin: 5rem 0rem;
     background-color: none;
-    border-top: 1px solid rgb(194, 194, 194);
+    border-top: 0.4px solid rgb(194, 194, 194);
 }
-
-
 
 /* ==== NAV BAR ==== */
 
@@ -412,10 +410,54 @@ nav ul {
     width: 100%;
     height: 90vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 7rem;
+    position: relative;
 }
 
 .project-sect-heading {
     font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.card-ctn {
+    display: flex;
+    height: 35rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 18rem;
+    height: 24rem;
+    border-radius: 0.9rem;
+    /* border: 1px solid rgb(177, 177, 177); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-img {
+    flex: 4;
+    border-bottom: 5px solid black;
+    width: 100%;
+    background-image: url('Images/DiscordBot/discord1.png');
+    background-size: cover;
+}
+
+.card-head-desc {
+    flex: 2;
+    background-color: #003049;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    
+}
+
+.card-head-desc-text {
+    margin-top: 1rem;
 }
