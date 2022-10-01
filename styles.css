@@ -408,7 +408,7 @@ nav ul {
 
 #project-section {
     width: 100%;
-    height: 90vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,24 +427,26 @@ nav ul {
     width: 90%;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 18rem;
     height: 24rem;
     border-radius: 0.9rem;
-    /* border: 1px solid rgb(177, 177, 177); */
+    border: 0.1px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    margin: 2rem;
+    /* box-shadow: 5px 0px rgba(128, 128, 128, 0.572); */
 }
 
 .card-img {
     flex: 4;
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
     width: 100%;
-    background-image: url('Images/DiscordBot/discord1.png');
     background-size: cover;
 }
 
@@ -454,10 +456,37 @@ nav ul {
     width: 100%;
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: #fffef9;
     
 }
 
 .card-head-desc-text {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+/* Specific Cards */
+.discord-card {
+    background-image: url('Images/DiscordBot/discord1.png');
+}
+
+.calculator-card {
+    background-image: url('Images/Calculator/calcHome.png');
+    background-size: contain;
+}
+
+.tic-tac-toe-card {
+    background-image: url("Images/TicTacToe/tictactoeHome.png");
+}
+
+.wordle-card {
+    background-image: url("Images/Wordle/game.png");
+}
+
+.foobar-card {
+    background-image: url("Images/GoogleFoobar/solutions.png");
+}
+
+.ds-card {
+    background-image: url("Images/DataStructures/structures.png")
 }
