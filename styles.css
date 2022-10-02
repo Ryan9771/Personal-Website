@@ -515,6 +515,7 @@ nav ul {
     right: 0;
     background-color: var(--background-primary);
     padding: 2rem;
+    overflow-y: scroll;
 }
 
 .modal-close {
@@ -572,15 +573,6 @@ nav ul {
     overflow-y: scroll;
 }
 
-.modal-img-ctn {
-    flex: 2;
-    height: 100%;
-    border: 1px solid green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .modal-text-para {
     margin-bottom: 1rem;
     font-size: 1.1rem;
@@ -607,7 +599,62 @@ ul.modal-list {
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.07rem;
+}
 
+.modal-link {
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px double orange;
+}
+
+.modal-git-link {
+    width: 17rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: var(--background-tertiary);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.07rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.1rem 1rem;
+    transition: transform 200ms;
+}
+
+.modal-git-link:hover {
+    transform: scale(1.1);
+}
+
+.modal-git-icon {
+    fill: white;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+/* Modal Image Container */
+
+.modal-img-ctn {
+    flex: 2;
+    height: 100%;
+    border: 1px solid green;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-img-carousell {
+    height: 30rem;
+    width: 100%;
+    border: 1px double blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
