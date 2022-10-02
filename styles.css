@@ -503,6 +503,49 @@ nav ul {
 }
 
 
+/* ===== PROJECT MODALS ===== */
+
+.modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-primary);
+    padding: 2rem;
+}
+
+.modal-close {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    transition: all 230ms;
+}
+
+.modal-close:hover {
+    fill: var(--background-secondary);
+    transform: scale(1.1) rotate(-180deg);
+}
+
+.modal-close-btn {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/* == Temp Controls == */
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+nav {
+    display: none;
+}
+/* == End Temp Controls == */
+
+
 /* ===== FOOTER ===== */
 
 #footer {
