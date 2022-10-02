@@ -31,3 +31,14 @@ modalBtn.addEventListener("click", () => {
     modal.style.display = "none";
     navbar.style.display = "flex";
 })
+
+
+// Modal Open
+const discProj = document.querySelector('[proj-num="0"]');
+// discord modal is modal (line 26)
+discProj.addEventListener("click", () => {
+    document.body.style.height = "100%";
+    document.body.style.overflow = "hidden";
+    modal.style.display = "block";
+    navbar.style.display = "none";
+})

@@ -525,6 +525,7 @@ nav ul {
     position: absolute;
     top: 3rem;
     right: 5rem;
+    z-index: 100;
 }
 
 .modal-close-btn {
@@ -575,6 +576,9 @@ nav ul {
     flex: 2;
     height: 100%;
     border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-text-para {
