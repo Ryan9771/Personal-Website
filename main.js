@@ -1,5 +1,4 @@
 // About carousell btn
-
 const aboutList = [...document.querySelectorAll(".about-ctn")];
 
 const btn = document.querySelector(".next-btn");
@@ -20,4 +19,15 @@ btn.addEventListener("click", function() {
     }
     aboutList[cnt].style.display = "flex";
     btnIcon.style.transform = `rotate(${rotate})`;
+})
+
+// Modal Close Btn
+const modalBtn = document.querySelector(".modal-close");
+const modal = document.querySelector(".modal");
+const navbar = document.querySelector("nav");
+modalBtn.addEventListener("click", () => {
+    document.body.style.height = "auto";
+    document.body.style.overflow = "auto";
+    modal.style.display = "none";
+    navbar.style.display = "flex";
 })

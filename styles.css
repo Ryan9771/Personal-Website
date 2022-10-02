@@ -522,17 +522,93 @@ nav ul {
     height: 1.6rem;
     cursor: pointer;
     transition: all 230ms;
-}
-
-.modal-close:hover {
-    fill: var(--background-secondary);
-    transform: scale(1.1) rotate(-180deg);
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
 }
 
 .modal-close-btn {
     width: 1.6rem;
     height: 1.6rem;
+    transition: all 230ms;
 }
+
+.modal-close:hover {
+    fill: var(--background-secondary);
+    transform: rotate(-180deg);
+}
+
+.modal-close:hover .modal-close-btn {
+    transform: scale(1.2);
+}
+
+.modal-info {
+    width: 98%;
+    position: relative;
+    height: 97%;
+    /* border: 1px solid gray; */
+    padding: 2rem 3rem;
+}
+
+.modal-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-text-img-ctn {
+    height: 38rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.modal-text {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.modal-img-ctn {
+    flex: 2;
+    height: 100%;
+    border: 1px solid green;
+}
+
+.modal-text-para {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
+    padding-right: 0.5rem;
+    /* padding: 0 0.5rem; */
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.modal-para-heading {
+    padding: 0 0.5rem;
+    letter-spacing: 0.07rem;
+    margin: 1rem 0;
+}
+
+ul.modal-list {
+    margin-left: 1rem;
+}
+
+.modal-list {
+    list-style-type: circle;
+    margin: 0.3rem 2rem 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.07rem;
+
+}
+
+
+
+
 
 /* == Temp Controls == */
 body {
