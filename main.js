@@ -42,3 +42,51 @@ discProj.addEventListener("click", () => {
     modal.style.display = "block";
     navbar.style.display = "none";
 })
+
+
+// Modal Discord Next Button
+const modalNextBtn = document.querySelector(".modal-next-btn-icon");
+const modalPrevBtn = document.querySelector(".modal-prev-btn-icon");
+let counter = 0;
+
+modalNextBtn.addEventListener("click", () => {
+    const project = modalNextBtn.getAttribute("project");
+    const projectImages = [...document.querySelectorAll(".".concat(project))];
+    counter++;
+
+    for (let i = 0; i < projectImages.length; i++) {
+        if (i === counter) {
+            if (projectImages[i].classList.contains("hidden")) {
+                projectImages[i].classList.remove("hidden");
+            }
+        } else if (!projectImages[i].classList.contains("hidden")) {
+            projectImages[i].classList.add("hidden");
+        }
+    }
+
+    if (counter === projectImages.length - 1) {
+        counter = -1;
+    }
+})
+
+modalPrevBtn.addEventListener("click", () => {
+    const project = modalPrevBtn.getAttribute("project");
+    const projectImages = [...document.querySelectorAll(".".concat(project))];
+
+    if (counter === 0) {
+        counter = projectImages.length;
+    }
+    counter--;
+
+    for (let i = 0; i < projectImages.length; i++) {
+        if (i === counter) {
+            if (projectImages[i].classList.contains("hidden")) {
+                projectImages[i].classList.remove("hidden");
+            }
+        } else if (!projectImages[i].classList.contains("hidden")) {
+            projectImages[i].classList.add("hidden");
+        }
+    }
+
+})
+

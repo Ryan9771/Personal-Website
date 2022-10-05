@@ -573,8 +573,13 @@ nav ul {
     overflow-y: scroll;
 }
 
+.modal-text::-webkit-scrollbar {
+    display: none;
+}
+
 .modal-text-para {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    /* margin-bottom: 1rem; */
     font-size: 1.1rem;
     letter-spacing: 0.07rem;
     padding-right: 0.5rem;
@@ -606,8 +611,7 @@ ul.modal-list {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 1px double orange;
+    align-items: flex-start;
 }
 
 .modal-git-link {
@@ -641,23 +645,58 @@ ul.modal-list {
 .modal-img-ctn {
     flex: 2;
     height: 100%;
-    border: 1px solid green;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    padding-left: 2rem;
 }
 
 .modal-img-carousell {
     height: 30rem;
-    width: 100%;
-    border: 1px double blue;
+    width: 31rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+.modal-next-btn-icon {
+    position: absolute;
+    bottom: 14rem;
+    right: 0;
+    fill: var(--background-tertiary);
+    width: 2rem;
+    height: 2rem;
+    transition: all 200ms;
+}
 
+.modal-next-btn-icon:hover {
+    transform: scale(1.2);
+}
+
+.modal-prev-btn-icon {
+    position: absolute;
+    bottom: 14rem;
+    left: 0;
+    fill: var(--background-tertiary);
+    width: 2rem;
+    height: 2rem;
+    transition: all 200ms; 
+    transform: rotate(180deg);
+}
+
+.modal-prev-btn-icon:hover {
+    transform: scale(1.2) rotate(180deg);
+}
+
+/* Image Carousell */
+.modal-img {
+    width: 25rem;
+    height: auto;
+    border-radius: 1rem;
+    /* margin: 0 6rem; */
+}
 
 
 
