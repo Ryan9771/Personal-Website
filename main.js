@@ -59,7 +59,6 @@ for (let i = 0; i < modalBtns.length; i++) {
 
 // Modal Discord Next Button
 const modalNextBtn = document.querySelector(".modal-next-btn-icon");
-const modalPrevBtn = document.querySelector(".modal-prev-btn-icon");
 let counter = 0;
 
 modalNextBtn.addEventListener("click", () => {
@@ -82,12 +81,16 @@ modalNextBtn.addEventListener("click", () => {
     }
 })
 
+// Modal Previous Button
+const modalPrevBtn = document.querySelector(".modal-prev-btn-icon");
 modalPrevBtn.addEventListener("click", () => {
     const project = modalPrevBtn.getAttribute("project");
     const projectImages = [...document.querySelectorAll(".".concat(project))];
 
     if (counter === 0) {
         counter = projectImages.length;
+    } else if (counter === -1) {
+        counter = projectImages.length - 1;
     }
     counter--;
 
