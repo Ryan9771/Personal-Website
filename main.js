@@ -57,52 +57,62 @@ for (let i = 0; i < modalBtns.length; i++) {
 }
 
 
-// Modal Discord Next Button
-const modalNextBtn = document.querySelector(".modal-next-btn-icon");
+// Modal Next Button
+const modalNextBtns = [...document.querySelectorAll(".modal-next-btn-icon")];
 let counter = 0;
 
-modalNextBtn.addEventListener("click", () => {
-    const project = modalNextBtn.getAttribute("project");
-    const projectImages = [...document.querySelectorAll(".".concat(project))];
-    counter++;
-
-    for (let i = 0; i < projectImages.length; i++) {
-        if (i === counter) {
-            if (projectImages[i].classList.contains("hidden")) {
-                projectImages[i].classList.remove("hidden");
+for (let i = 0; i < modalNextBtns.length; i++) {
+    modalNextBtns[i].addEventListener("click", () => {
+        const project = modalNextBtns[i].getAttribute("project");
+        const projectImages = [...document.querySelectorAll(".".concat(project))];
+        counter++;
+    
+        for (let i = 0; i < projectImages.length; i++) {
+            if (i === counter) {
+                if (projectImages[i].classList.contains("hidden")) {
+                    projectImages[i].classList.remove("hidden");
+                }
+            } else if (!projectImages[i].classList.contains("hidden")) {
+                projectImages[i].classList.add("hidden");
             }
-        } else if (!projectImages[i].classList.contains("hidden")) {
-            projectImages[i].classList.add("hidden");
         }
-    }
+    
+        if (counter === projectImages.length - 1) {
+            counter = -1;
+        }
+    })
+}
 
-    if (counter === projectImages.length - 1) {
-        counter = -1;
-    }
-})
+
 
 // Modal Previous Button
-const modalPrevBtn = document.querySelector(".modal-prev-btn-icon");
-modalPrevBtn.addEventListener("click", () => {
-    const project = modalPrevBtn.getAttribute("project");
-    const projectImages = [...document.querySelectorAll(".".concat(project))];
+const modalPrevBtns = [...document.querySelector(".modal-prev-btn-icon")];
 
-    if (counter === 0) {
-        counter = projectImages.length;
-    } else if (counter === -1) {
-        counter = projectImages.length - 1;
-    }
-    counter--;
-
-    for (let i = 0; i < projectImages.length; i++) {
-        if (i === counter) {
-            if (projectImages[i].classList.contains("hidden")) {
-                projectImages[i].classList.remove("hidden");
-            }
-        } else if (!projectImages[i].classList.contains("hidden")) {
-            projectImages[i].classList.add("hidden");
+for (let i = 0; i < modalPrevBtns.length; i++) {
+    modalPrevBtns[i].addEventListener("click", () => {
+        const project = modalPrevBtns[i].getAttribute("project");
+        const projectImages = [...document.querySelectorAll(".".concat(project))];
+    
+        if (counter === 0) {
+            counter = projectImages.length;
+        } else if (counter === -1) {
+            counter = projectImages.length - 1;
         }
-    }
+        counter--;
+    
+        for (let i = 0; i < projectImages.length; i++) {
+            if (i === counter) {
+                if (projectImages[i].classList.contains("hidden")) {
+                    projectImages[i].classList.remove("hidden");
+                }
+            } else if (!projectImages[i].classList.contains("hidden")) {
+                projectImages[i].classList.add("hidden");
+            }
+        }
+    
+    })
+}
 
-})
+
+
 
