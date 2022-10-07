@@ -21,27 +21,40 @@ btn.addEventListener("click", function() {
     btnIcon.style.transform = `rotate(${rotate})`;
 })
 
-// Modal Close Btn
-const modalBtn = document.querySelector(".modal-close");
-const modal = document.querySelector(".modal");
-const navbar = document.querySelector("nav");
-modalBtn.addEventListener("click", () => {
-    document.body.style.height = "auto";
-    document.body.style.overflow = "auto";
-    modal.style.display = "none";
-    navbar.style.display = "flex";
-})
-
 
 // Modal Open
-const discProj = document.querySelector('[proj-num="0"]');
-// discord modal is modal (line 26)
-discProj.addEventListener("click", () => {
-    document.body.style.height = "100%";
-    document.body.style.overflow = "hidden";
-    modal.style.display = "block";
-    navbar.style.display = "none";
-})
+const cardList = [...document.querySelectorAll(".card")];
+
+for (let i = 0; i < cardList.length; i++) {
+    const card = cardList[i];
+    card.addEventListener("click", () => {
+        const projNum = card.getAttribute("proj-num");
+        console.log(projNum);
+
+        const projModal = document.querySelector(`[proj-modal="${projNum}"]`);
+        console.log(projModal);
+
+        document.body.style.height = "100%";
+        document.body.style.overflow = "hidden";
+        projModal.style.display = "block";
+        navbar.style.display = "none";
+    })
+}
+
+// Modal Close
+const modalBtns = [...document.querySelectorAll(".modal-close")];
+const navbar = document.querySelector("nav");
+
+for (let i = 0; i < modalBtns.length; i++) {
+    modalBtns[i].addEventListener("click", () => {
+        const modalNum = modalBtns[i].getAttribute("proj-modal");
+        const modal = document.querySelector(`[proj-modal="${modalNum}"]`);
+        document.body.style.height = "auto";
+        document.body.style.overflow = "auto";
+        modal.style.display = "none";
+        navbar.style.display = "flex";
+    })
+}
 
 
 // Modal Discord Next Button

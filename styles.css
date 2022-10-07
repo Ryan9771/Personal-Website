@@ -516,6 +516,7 @@ nav ul {
     background-color: var(--background-primary);
     padding: 2rem;
     overflow-y: scroll;
+    display: none;
 }
 
 .modal-close {
@@ -701,14 +702,14 @@ ul.modal-list {
 
 
 /* == Temp Controls == */
-body {
+/* body {
     overflow: hidden;
     height: 100%;
 }
 
 nav {
     display: none;
-}
+} */
 /* == End Temp Controls == */
 
 
