@@ -708,6 +708,12 @@ ul.modal-list {
     border-radius: 2rem;
 }
 
+.wordle-img {
+    width: 20rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
 
 
 /* == Temp Controls == */
