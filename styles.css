@@ -572,6 +572,9 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     overflow-y: scroll;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: justify;
 }
 
 .modal-text::-webkit-scrollbar {
