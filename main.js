@@ -86,7 +86,7 @@ for (let i = 0; i < modalNextBtns.length; i++) {
 
 
 // Modal Previous Button
-const modalPrevBtns = [...document.querySelector(".modal-prev-btn-icon")];
+const modalPrevBtns = [...document.querySelectorAll(".modal-prev-btn-icon")];
 
 for (let i = 0; i < modalPrevBtns.length; i++) {
     modalPrevBtns[i].addEventListener("click", () => {
@@ -99,6 +99,7 @@ for (let i = 0; i < modalPrevBtns.length; i++) {
             counter = projectImages.length - 1;
         }
         counter--;
+        console.log(counter);
     
         for (let i = 0; i < projectImages.length; i++) {
             if (i === counter) {
