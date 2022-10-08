@@ -714,18 +714,13 @@ ul.modal-list {
     border-radius: 1rem;
 }
 
-
-
-/* == Temp Controls == */
-/* body {
-    overflow: hidden;
-    height: 100%;
+.ds-img {
+    height: 22rem;
+    width: 10rem;
 }
 
-nav {
-    display: none;
-} */
-/* == End Temp Controls == */
+
+
 
 
 /* ===== FOOTER ===== */
