@@ -41,21 +41,9 @@ for (let i = 0; i < cardList.length; i++) {
     })
 }
 
-// Modal Close
-const modalBtns = [...document.querySelectorAll(".modal-close")];
-const navbar = document.querySelector("nav");
 
-for (let i = 0; i < modalBtns.length; i++) {
-    modalBtns[i].addEventListener("click", () => {
-        const modalNum = modalBtns[i].getAttribute("proj-modal");
-        const modal = document.querySelector(`[proj-modal="${modalNum}"]`);
-        document.body.style.height = "auto";
-        document.body.style.overflow = "auto";
-        modal.style.display = "none";
-        navbar.style.display = "flex";
-    })
-}
-
+// Modal Previous State
+let prevProject;
 
 // Modal Next Button
 const modalNextBtns = [...document.querySelectorAll(".modal-next-btn-icon")];
@@ -65,7 +53,21 @@ for (let i = 0; i < modalNextBtns.length; i++) {
     modalNextBtns[i].addEventListener("click", () => {
         const project = modalNextBtns[i].getAttribute("project");
         const projectImages = [...document.querySelectorAll(".".concat(project))];
+
+        if (!prevProject || prevProject !== project) {
+            counter = 0;
+        } 
+        if (counter === projectImages.length - 1) {
+            counter = -1;
+        }
+
+        prevProject = project;
+
+        console.log("====== Next Before ======");
+        console.log(counter);
         counter++;
+        console.log("====== Next After ======");
+        console.log(counter);
     
         for (let i = 0; i < projectImages.length; i++) {
             if (i === counter) {
@@ -83,14 +85,18 @@ for (let i = 0; i < modalNextBtns.length; i++) {
     })
 }
 
-
-
 // Modal Previous Button
 const modalPrevBtns = [...document.querySelectorAll(".modal-prev-btn-icon")];
 
 for (let i = 0; i < modalPrevBtns.length; i++) {
     modalPrevBtns[i].addEventListener("click", () => {
         const project = modalPrevBtns[i].getAttribute("project");
+
+        if (!prevProject || prevProject !== project) {
+            counter = 0;
+        }
+        prevProject = project;
+
         const projectImages = [...document.querySelectorAll(".".concat(project))];
     
         if (counter === 0) {
@@ -98,7 +104,10 @@ for (let i = 0; i < modalPrevBtns.length; i++) {
         } else if (counter === -1) {
             counter = projectImages.length - 1;
         }
+        console.log("====== Previous Before ======");
+        console.log(counter);
         counter--;
+        console.log("====== Previous After ======");
         console.log(counter);
     
         for (let i = 0; i < projectImages.length; i++) {
@@ -113,6 +122,42 @@ for (let i = 0; i < modalPrevBtns.length; i++) {
     
     })
 }
+
+const projMap = {
+    "0": "discord",
+    "1": "calculator"
+}
+
+function onModalClose(projectNum) {
+    const proj = projMap[projectNum];
+    const allImgs = [...document.querySelectorAll(".".concat(proj))];
+    for (let i = 0; i < allImgs.length; i++) {
+        if (i === 0 && allImgs[i].classList.contains("hidden")) {
+            allImgs[i].classList.remove("hidden");
+        } else if (i !== 0 && !allImgs[i].classList.contains("hidden")) {
+            allImgs[i].classList.add("hidden");
+        }
+    }
+    counter = 0;
+}
+
+// Modal Close
+const modalBtns = [...document.querySelectorAll(".modal-close")];
+const navbar = document.querySelector("nav");
+
+for (let i = 0; i < modalBtns.length; i++) {
+    modalBtns[i].addEventListener("click", () => {
+        const modalNum = modalBtns[i].getAttribute("proj-modal");
+        onModalClose(modalNum);
+        const modal = document.querySelector(`[proj-modal="${modalNum}"]`);
+        document.body.style.height = "auto";
+        document.body.style.overflow = "auto";
+        modal.style.display = "none";
+        navbar.style.display = "flex";   
+    })
+}
+
+
 
 
 

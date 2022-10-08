@@ -699,6 +699,12 @@ ul.modal-list {
     /* margin: 0 6rem; */
 }
 
+.full-screen {
+    width: 11rem;
+    height: auto;
+    border-radius: 2rem;
+}
+
 
 
 /* == Temp Controls == */
