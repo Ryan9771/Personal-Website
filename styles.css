@@ -139,8 +139,16 @@ nav ul {
     background-color: var(--background-primary);
     width: 100%;
     height: 47rem; 
+    display: flex;
 }
 
+.heading {
+    position: absolute;
+    left: 13rem;
+    top: 15rem;
+    width: 30rem;
+    z-index: 2;
+}
 
 .btm-left-corner {
     position: absolute;
@@ -153,7 +161,7 @@ nav ul {
 .top-right-corner {
     position: absolute;
     top: -4rem;
-    right: 7rem;
+    right: -4rem;
     width: 9rem;
     height: 6rem; 
 }
@@ -168,14 +176,6 @@ nav ul {
 .greeting-2 {
     font-size: 2rem;
     margin-left: 0.6rem;
-}
-
-.heading {
-    position: absolute;
-    left: 13rem;
-    top: 15rem;
-    width: 40rem;
-    z-index: 2;
 }
 
 .home-heading {
@@ -322,7 +322,7 @@ nav ul {
 
 .heading-about {
     font-size: 4rem;
-    padding: 2rem 1.5rem;
+    padding: 2rem 0rem;
 }
 
 .about-text {
@@ -417,7 +417,7 @@ nav ul {
 }
 
 .contact-icons:hover .contact-icon {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -601,9 +601,9 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     text-align: justify;
 }
 
@@ -754,15 +754,49 @@ ul.modal-list {
 
 
 /* ==== 1350px: Slight Closing of Screen 7/8 open ====*/
-@media (max-width: 1350px) {
+@media (min-width: 1270px) and (max-width: 1350px) {
+    .heading {
+        left: 11rem;
+    }
+
     .home-img {
         right: 5rem;
     }
 
     .heading-about {
-        padding: 2rem 0;
+        font-size: 3.8rem;
     }
 }
 
+@media (min-width: 1260px) and (max-width: 1270px) {
+    .heading {
+       left: 9rem; 
+    }
 
+    .home-img {
+        right: 4rem;
+    }
 
+    .heading-about {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 1260px) {
+    .heading {
+        left: 9rem; 
+    }
+ 
+    .home-img {
+         right: 4rem;
+    }
+
+    .heading-about {
+        font-size: 3.8rem;
+    }
+
+    .contact-icons {
+        fill: green;
+    }
+}
+ 
