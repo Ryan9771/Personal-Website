@@ -322,7 +322,7 @@ nav ul {
 
 .heading-about {
     font-size: 4rem;
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
 }
 
 .about-text {
@@ -406,7 +406,7 @@ nav ul {
     height: 1.5rem;
     fill: inherit;
     margin-right: 0.5rem;
-    transition: all 150ms;
+    transition: all 100ms;
 }
 
 .contact-icons:hover {
@@ -750,7 +750,19 @@ ul.modal-list {
 }
 
 
+/* ========= SCREEN SIZE CHANGES ======== */
 
+
+/* ==== 1350px: Slight Closing of Screen 7/8 open ====*/
+@media (max-width: 1350px) {
+    .home-img {
+        right: 5rem;
+    }
+
+    .heading-about {
+        padding: 2rem 0;
+    }
+}
 
 
 
