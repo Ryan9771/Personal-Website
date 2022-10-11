@@ -397,14 +397,27 @@ nav ul {
     border-width: 2px;
     border-radius: 1rem;
     margin-top: 2rem;
+    transition: all 200ms;
 
 }
 
 .contact-icon {
     width: 1.5rem;
     height: 1.5rem;
-    fill: black;
+    fill: inherit;
     margin-right: 0.5rem;
+    transition: all 150ms;
+}
+
+.contact-icons:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: var(--background-tertiary);
+    fill: white;
+}
+
+.contact-icons:hover .contact-icon {
+    transform: scale(1.1);
 }
 
 
