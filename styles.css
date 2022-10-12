@@ -236,6 +236,7 @@ nav ul {
     background-color: var(--background-tertiary);
     border-radius: 1.5rem;
     padding: 4rem 7rem;
+    transition: all 300ms;
 }
 
 .info-bar {
