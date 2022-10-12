@@ -1,0 +1,2 @@
+- Make the buttons work for the navbar
+- Screen size for modal

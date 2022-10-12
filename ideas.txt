@@ -1,3 +1,0 @@
-- Upon scrolling from the home page, the box shadow can slowly go to 0
-- maybe some mini animal that is on the side of the blue box and the eye that follows it everywhere
-- Small cards for the projects

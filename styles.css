@@ -22,6 +22,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overscroll-behavior: none;
     background-color: var(--background-primary);
