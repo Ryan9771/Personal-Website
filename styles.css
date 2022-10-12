@@ -1073,7 +1073,7 @@ ul.modal-list {
     }
 }
 
-@media (max-width: 920px) {
+@media (min-width: 700px) and (max-width: 920px) {
     #home-section {
         height: 40rem;
         justify-content: center;
@@ -1148,7 +1148,7 @@ ul.modal-list {
     }
 
     nav ul {
-        margin-right: 5rem;
+        margin-right: 0;
     }
 
     nav {
@@ -1156,6 +1156,125 @@ ul.modal-list {
     }
 
     #logo {
-        margin-right: 5rem;
+        position: absolute;
+        left: 1rem;
+        padding: 0.3rem;
+    }
+
+    .logo-text {
+        display: none;
+        padding: 0;
+    }
+
+    .logo-icon {
+        margin: 0;
+    }
+
+    .next-btn {
+        right: 1.5rem;
+        bottom: 0rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #home-section {
+        height: 40rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        transform: scale(1.2);
+        position: static;
+        transform: scale(0.9);
+    }
+    .home-img { 
+        right: 4rem;
+        width: 17rem;
+    }
+
+    .heading-about {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .btm-left-corner {
+        left: -4.8rem;
+        bottom: -2rem;
+    }
+    
+    .top-right-corner {
+        top: -2.8rem;
+        right: -3.5rem;
+    }
+
+    .about-icons-ctn {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .contact-icons {
+        width: 10rem;
+        padding: 0.4rem 1rem;
+        margin-right: 0;
+    }  
+    
+    .nav-li {
+        margin: 0 0.6rem;
+    }
+
+    #home-about {
+        height: 30rem;
+    }
+
+    .blue-overlay {
+        width: 25rem;
+    }
+
+    .info-bar {
+        left: 4.1rem;
+    }
+
+    .info-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar {
+        left: 4.1rem;
+        top: 15.5rem;
+    }
+
+    nav ul {
+        margin-right: 0;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #logo {
+        position: absolute;
+        left: 1rem;
+        padding: 0.3rem;
+    }
+
+    .logo-text {
+        display: none;
+        padding: 0;
+    }
+
+    .logo-icon {
+        margin: 0;
+    }
+
+    .next-btn {
+        right: 1.5rem;
+        bottom: 0rem;
     }
 }
