@@ -221,7 +221,6 @@ nav ul {
     position: relative;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .grey-width {
@@ -884,6 +883,30 @@ ul.modal-list {
         margin: 0 0.6rem;
     }
 
+    #home-about {
+        height: 30rem;
+    }
+
+    .blue-overlay {
+        width: 25rem;
+    }
+
+    .info-bar {
+        left: 4.1rem;
+    }
+
+    .info-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar {
+        left: 4.1rem;
+        top: 15.5rem;
+    }
 
     
 }
