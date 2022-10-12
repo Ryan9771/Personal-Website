@@ -781,6 +781,10 @@ ul.modal-list {
     .heading-about {
         font-size: 3.8rem;
     }
+
+    .nav-li {
+        margin: 0 0.2rem;
+    }
 }
 
 @media (min-width: 1205px) and (max-width: 1260px) {
@@ -802,6 +806,10 @@ ul.modal-list {
         justify-content: center;
         padding: 0.4rem 1rem;
     } 
+
+    .nav-li {
+        margin: 0 0.4rem;
+    }
 }
 
 @media (min-width: 1180px) and (max-width: 1205px) {
@@ -834,6 +842,10 @@ ul.modal-list {
         justify-content: center;
         padding: 0.4rem 1rem;
     } 
+
+    .nav-li {
+        margin: 0 0.6rem;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -843,10 +855,21 @@ ul.modal-list {
  
     .home-img {
          right: 4rem;
+         width: 19rem;
     }
 
     .heading-about {
         font-size: 3.6rem;
+    }
+
+    .btm-left-corner {
+        left: -5rem;
+        bottom: -2rem;
+    }
+    
+    .top-right-corner {
+        top: -3rem;
+        right: -3.5rem;
     }
 
     .contact-icons {
@@ -855,5 +878,12 @@ ul.modal-list {
         justify-content: center;
         padding: 0.4rem 1rem;
         fill: green;
+    }  
+    
+    .nav-li {
+        margin: 0 0.6rem;
     }
+
+
+    
 }
