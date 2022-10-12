@@ -202,7 +202,7 @@ nav ul {
 .home-img {
     border-radius: 1rem;
     width: 22rem;
-    height: 26rem;
+    height: auto;
     position: absolute;
     top: 11rem;
     right: 10rem;
@@ -804,7 +804,39 @@ ul.modal-list {
     } 
 }
 
-@media (max-width: 1205px) {
+@media (min-width: 1180px) and (max-width: 1205px) {
+    .heading {
+        left: 9rem; 
+    }
+ 
+    .home-img {
+         right: 4rem;
+         width: 19rem;
+    }
+
+    .heading-about {
+        font-size: 3.6rem;
+    }
+
+    .btm-left-corner {
+        left: -5rem;
+        bottom: -2rem;
+    }
+    
+    .top-right-corner {
+        top: -3rem;
+        right: -3.5rem;
+    }
+
+    .contact-icons {
+        margin-right: 3rem;
+        width: 10rem;
+        justify-content: center;
+        padding: 0.4rem 1rem;
+    } 
+}
+
+@media (max-width: 1180px) {
     .heading {
         left: 9rem; 
     }
@@ -814,7 +846,7 @@ ul.modal-list {
     }
 
     .heading-about {
-        font-size: 3.8rem;
+        font-size: 3.6rem;
     }
 
     .contact-icons {
@@ -823,7 +855,5 @@ ul.modal-list {
         justify-content: center;
         padding: 0.4rem 1rem;
         fill: green;
-    } 
-
-
+    }
 }
