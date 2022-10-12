@@ -100,6 +100,7 @@ nav ul {
     justify-content: space-around;
     width: 30%;
     margin-right: 50px;
+    transition: all 200ms;
 }
 
 .nav-li {
@@ -140,6 +141,7 @@ nav ul {
     width: 100%;
     height: 47rem; 
     display: flex;
+    transition: all 200ms;
 }
 
 .heading {
@@ -148,6 +150,7 @@ nav ul {
     top: 15rem;
     width: 30rem;
     z-index: 2;
+    transition: all 200ms
 }
 
 .btm-left-corner {
@@ -156,6 +159,7 @@ nav ul {
     bottom: -3.5rem;
     width: 9rem;
     height: 6rem;
+    transition: all 200ms;
 }
 
 .top-right-corner {
@@ -164,6 +168,7 @@ nav ul {
     right: -4rem;
     width: 9rem;
     height: 6rem; 
+    transition: all 200ms;
 }
 
 .greeting-1 {
@@ -207,6 +212,7 @@ nav ul {
     top: 11rem;
     right: 10rem;
     border: 1px solid var(--background-tertiary);
+    transition: all 200ms;
     /* box-shadow: 5px 5px rgba(0, 0, 0, 0.337); */
 }
 
@@ -246,6 +252,7 @@ nav ul {
     position: absolute;
     left: 7rem;
     top: 4rem;
+    transition: all 200ms;
 }
 
 .info-bar-row {
@@ -279,6 +286,7 @@ nav ul {
     position: absolute;
     top: 4rem;
     right: 7rem;
+    transition: all 200ms;
 }
 
 .hobby-bar-row {
@@ -323,6 +331,7 @@ nav ul {
 .heading-about {
     font-size: 4rem;
     padding: 2rem 0rem;
+    transition: all 200ms;
 }
 
 .about-text {
@@ -794,6 +803,7 @@ ul.modal-list {
  
     .home-img {
          right: 4rem;
+         width: 21rem;
     }
 
     .heading-about {
@@ -801,7 +811,7 @@ ul.modal-list {
     }
 
     .contact-icons {
-        margin-right: 3rem;
+        margin-right: 4rem;
         width: 10rem;
         justify-content: center;
         padding: 0.4rem 1rem;
@@ -837,7 +847,7 @@ ul.modal-list {
     }
 
     .contact-icons {
-        margin-right: 3rem;
+        margin-right: 3.2rem;
         width: 10rem;
         justify-content: center;
         padding: 0.4rem 1rem;
@@ -848,7 +858,7 @@ ul.modal-list {
     }
 }
 
-@media (max-width: 1180px) {
+@media (min-width: 1050px) and (max-width: 1180px) {
     .heading {
         left: 9rem; 
     }
@@ -859,7 +869,7 @@ ul.modal-list {
     }
 
     .heading-about {
-        font-size: 3.6rem;
+        font-size: 3.3rem;
     }
 
     .btm-left-corner {
@@ -873,11 +883,10 @@ ul.modal-list {
     }
 
     .contact-icons {
-        margin-right: 3rem;
+        margin-right: 4rem;
         width: 10rem;
         justify-content: center;
         padding: 0.4rem 1rem;
-        fill: green;
     }  
     
     .nav-li {
@@ -910,4 +919,243 @@ ul.modal-list {
     }
 
     
+}
+
+@media (min-width:1000px) and (max-width: 1050px) {
+
+    #home-section {
+        height: 40rem;
+    }
+
+    .heading {
+        left: 5rem; 
+        transform: scale(0.9);
+    }
+ 
+    .home-img {
+         right: 4rem;
+         width: 17rem;
+    }
+
+    .heading-about {
+        font-size: 2.9rem;
+    }
+
+    .btm-left-corner {
+        left: -5rem;
+        bottom: -2rem;
+    }
+    
+    .top-right-corner {
+        top: -3rem;
+        right: -3.5rem;
+    }
+
+    .about-icons-ctn {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .contact-icons {
+        width: 10rem;
+        padding: 0.4rem 1rem;
+        margin-right: 0;
+    }  
+    
+    .nav-li {
+        margin: 0 0.6rem;
+    }
+
+    #home-about {
+        height: 30rem;
+    }
+
+    .blue-overlay {
+        width: 25rem;
+    }
+
+    .info-bar {
+        left: 4.1rem;
+    }
+
+    .info-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar {
+        left: 4.1rem;
+        top: 15.5rem;
+    }
+
+    nav ul {
+        margin-right: 5rem;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1000px) {
+    #home-section {
+        height: 40rem;
+    }
+
+    .heading {
+        left: 5rem; 
+        transform: scale(0.9);
+    }
+    .home-img { right: 4rem;
+         width: 17rem;
+    }
+
+    .heading-about {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .btm-left-corner {
+        left: -5rem;
+        bottom: -2rem;
+    }
+    
+    .top-right-corner {
+        top: -3rem;
+        right: -3.5rem;
+    }
+
+    .about-icons-ctn {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .contact-icons {
+        width: 10rem;
+        padding: 0.4rem 1rem;
+        margin-right: 0;
+    }  
+    
+    .nav-li {
+        margin: 0 0.6rem;
+    }
+
+    #home-about {
+        height: 30rem;
+    }
+
+    .blue-overlay {
+        width: 25rem;
+    }
+
+    .info-bar {
+        left: 4.1rem;
+    }
+
+    .info-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar {
+        left: 4.1rem;
+        top: 15.5rem;
+    }
+
+    nav ul {
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 920px) {
+    #home-section {
+        height: 40rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        transform: scale(1.2);
+        position: static;
+        transform: scale(0.9);
+    }
+    .home-img { right: 4rem;
+         width: 17rem;
+         display: none;
+    }
+
+    .heading-about {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .btm-left-corner {
+        left: -4.8rem;
+        bottom: -2rem;
+    }
+    
+    .top-right-corner {
+        top: -2.8rem;
+        right: -3.5rem;
+    }
+
+    .about-icons-ctn {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .contact-icons {
+        width: 10rem;
+        padding: 0.4rem 1rem;
+        margin-right: 0;
+    }  
+    
+    .nav-li {
+        margin: 0 0.6rem;
+    }
+
+    #home-about {
+        height: 30rem;
+    }
+
+    .blue-overlay {
+        width: 25rem;
+    }
+
+    .info-bar {
+        left: 4.1rem;
+    }
+
+    .info-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-bar {
+        left: 4.1rem;
+        top: 15.5rem;
+    }
+
+    nav ul {
+        margin-right: 5rem;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    #logo {
+        margin-right: 5rem;
+    }
 }
