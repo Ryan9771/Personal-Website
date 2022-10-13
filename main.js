@@ -14,8 +14,10 @@ function toggleAboutContact(count) {
     aboutList[count].style.display = "flex";
     if (count === 0) {
         aboutList[1].style.display = "none";
+        btnIcon.style.transform = "rotate(0deg)";
     } else {
         aboutList[0].style.display = "none";
+        btnIcon.style.transform = "rotate(-180deg)";
     }
 }
 
