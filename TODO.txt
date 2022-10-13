@@ -1,2 +1,2 @@
-- Make the buttons work for the navbar
+- About & Contact button for navbar
 - Screen size for modal

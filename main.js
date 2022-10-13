@@ -4,9 +4,32 @@ const aboutList = [...document.querySelectorAll(".about-ctn")];
 const btn = document.querySelector(".next-btn");
 const btnIcon = document.getElementById("next-btn-icon");
 
-aboutList[0].style.display = "flex";
+const aboutNavBtn = document.getElementById("about-nav");
+const contactNavBtn = document.getElementById("contact-nav");
 
 let cnt = 0;
+aboutList[0].style.display = "flex";
+
+function toggleAboutContact(count) {
+    aboutList[count].style.display = "flex";
+    if (count === 0) {
+        aboutList[1].style.display = "none";
+    } else {
+        aboutList[0].style.display = "none";
+    }
+}
+
+aboutNavBtn.addEventListener("click", () => {
+    cnt = 0;
+    toggleAboutContact(cnt);
+})
+
+contactNavBtn.addEventListener("click", () => {
+    cnt = 1;
+    toggleAboutContact(cnt);
+})
+
+
 btn.addEventListener("click", function() {
     aboutList[cnt].style.display = "none";
     let rotate;
